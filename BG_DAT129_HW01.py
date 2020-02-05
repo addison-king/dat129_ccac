@@ -223,6 +223,5 @@ def main():
     # rotate = get_rotation()
     alpha_icon(icon_list, scale, on_invert, off)
 
-
 if __name__ == "__main__":
     main()
