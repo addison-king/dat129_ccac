@@ -91,7 +91,6 @@ def get_scale():
         break
     return user_choice
 
-
 def get_invert():
     '''
         Asks for input. The return value is interpreted later for a yes/no
@@ -172,8 +171,6 @@ def alpha_icon(icon_list, scale, on_invert, off):
             building_str = building_str + scale * off
         if j != 0 and j % 10 == 0:
             building_str = beta_icon(building_str, scale)
-
-
 
 def beta_icon(print_str, scale):
     '''
