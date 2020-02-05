@@ -6,35 +6,42 @@ Brandyn Gilbert
     Icon Processing
 """
 #PLAN
-"""
-    Print an icon using a static input
-        loop through list, print @ if 1, " " if 0
-        At (position +1 % 10), print new line
-        Keep looping until done
-    Modify the code to allow scaling by an integer
-        create a string to add the printable chars to
-        set on=@, off=" " ;; use scale*on for length scaling ;; add to string
-        Once the end of icon line reached, add "\n" to end
-        print(str*scale) ;; this accounts for height scaling
-    Modify the code further to allow inverting the icon
-        if YES, then set on=" ", off=@
-        if NO,  then set on=@  , off=" "
-    FLesh out user inputs for scaling & inverting
-        get the inputs, check for exclusions
-        return the choice to main
-    Modify the code for rotating the icon
-    Allow user input for custom icons
-"""
+# =============================================================================
+#     Print an icon using a static input
+#         loop through list, print @ if 1, " " if 0
+#         At (position +1 % 10), print new line
+#         Keep looping until done
+#     Modify the code to allow scaling by an integer
+#         create a string to add the printable chars to
+#         set on=@, off=" " ;; use scale*on for length scaling ;; add to string
+#         Once the end of icon line reached, add "\n" to end
+#         print(str*scale) ;; this accounts for height scaling
+#     Modify the code further to allow inverting the icon
+#         if YES, then set on=" ", off=@
+#         if NO,  then set on=@  , off=" "
+#     FLesh out user inputs for scaling & inverting
+#         get the inputs, check for exclusions
+#         return the choice to main
+#     Modify the code for rotating the icon
+#     Allow user input for custom icons
+# =============================================================================
 
 def greeting():
+    '''
+    Simple print greeting.
+
+    Returns
+    -------
+    None.
+
+    '''
     print("Hello, welcome to icon processing.\n")
     print("Please have your icon ready as a single line of 1s & 0s.")
     print("\t\"1s\" will be interpreted as a filled pixel.")
     print("\t\"0s\" will be interpreted as a blank pixel.")
     input("Press ENTER to when you are ready to continue.")
-    return
 
-def get_Icon():
+def get_icon():
     '''
         Asks the user for input. Must be 100 numbers. Stores to a list.
 
@@ -60,7 +67,7 @@ def get_Icon():
     user_list = list(str(user_input))
     return user_list
 
-def get_Scale():
+def get_scale():
     '''
         Asks for input. Uses that integer to scale the icon.
 
@@ -85,7 +92,7 @@ def get_Scale():
     return user_choice
 
 
-def get_Invert():
+def get_invert():
     '''
         Asks for input. The return value is interpreted later for a yes/no
 
@@ -103,38 +110,40 @@ def get_Invert():
         except ValueError:
             print("That is not a valid choice.\nPlease try again.")
             continue
-        if user_choice != "Y" and user_choice != "N":
+        if user_choice not in ("Y", "N"):
             print("That is not a valid choice.\nPlease try again.")
             continue
         break
     if user_choice == "Y":
-        return 1
+        invert = 1
     else:
-        return 0
-    
-def get_Rotation():
+        invert = 0
+    return invert
+
+def get_rotation():
     '''
         Currently not used.
     '''
     user_choice = str(input("Rotate? (0, 90, 180, 270): "))
     if user_choice == "90":
-        return 90
+        rotate = 90
     elif user_choice == "180":
-        return 180
+        rotate = 180
     elif user_choice == "270":
-        return 270
+        rotate = 270
     else:
-        return 0
+        rotate = 0
+    return rotate
 
-def alpha_Icon(icon_list, scale, on, off):
+def alpha_icon(icon_list, scale, on_invert, off):
     '''
-    This function takes the raw icon list, the scale integer, the 'on' string, 
-        and the 'off' string, creates 1 line of the icon, sends that line to 
+    This function takes the raw icon list, the scale integer, the 'on' string,
+        and the 'off' string, creates 1 line of the icon, sends that line to
         the next function for final processing
     Initialize: an empty string, variable = 0
     Use the for loop to go through the list 1 char at a time
-    Once the end of the line is reached, send to beta_Icon, then continue
-        the for loop until end    
+    Once the end of the line is reached, send to beta_icon, then continue
+        the for loop until end
 
     Parameters
     ----------
@@ -142,7 +151,7 @@ def alpha_Icon(icon_list, scale, on, off):
         List of numbers the user inputed to be turned into an icon.
     scale : INT
         The scale by which the icon should be amplified.
-    on : STR
+   on_invert: STR
         The chars for every "on" pixel in the icon.
     off : STR
         The chars for every "off" pixel in the icon.
@@ -152,22 +161,23 @@ def alpha_Icon(icon_list, scale, on, off):
     None.
 
     '''
-    
+
     building_str = ""
     j = 0
     for i in icon_list:
-        j -=- 1
+        j -= -1
         if i == "1":
-            building_str = building_str + scale * on
+            building_str = building_str + scale * on_invert
         else:
             building_str = building_str + scale * off
         if j != 0 and j % 10 == 0:
-            building_str = beta_Icon(building_str, scale)
-    return
+            building_str = beta_icon(building_str, scale)
 
-def beta_Icon(print_str, scale):
+
+
+def beta_icon(print_str, scale):
     '''
-        Takes the first full line of the icon. 
+        Takes the first full line of the icon.
         Prints the line multiplied by the scale (vertical scaling)
 
     Parameters
@@ -182,16 +192,16 @@ def beta_Icon(print_str, scale):
     none
 
     '''
-    
+
     print_str = print_str + "\n"
     print_str = scale * print_str
     print(print_str, end='')
     print_str = ''
-    return 
+    return print_str
 
 def main():
     '''
-    MAIN function. 
+    MAIN function.
     Calls all of the other functions in the program.
     With an if/else to decide what the print icon pixels should be.
 
@@ -201,19 +211,18 @@ def main():
 
     '''
     greeting()
-    icon_list = get_Icon()
-    scale = get_Scale()
-    invert = get_Invert()
+    icon_list = get_icon()
+    scale = get_scale()
+    invert = get_invert()
     if invert == 1:
-        on = "  "
+        on_invert = "  "
         off = "||"
     else:
-        on = "||"
+        on_invert = "||"
         off = "  "
-    # rotate = get_Rotation()
-    alpha_Icon(icon_list, scale, on, off)
-    
-    
+    # rotate = get_rotation()
+    alpha_icon(icon_list, scale, on_invert, off)
+
 
 if __name__ == "__main__":
     main()
