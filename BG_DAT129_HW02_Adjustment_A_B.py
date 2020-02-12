@@ -43,10 +43,24 @@ def greeting():
     input("Press ENTER to when you are ready to continue.")
 
 def get_on():
+    '''
+    Ask the user for what character to interpret as "on"
+
+    Returns:
+        on_char (str): on character.
+
+    '''
     on_char = input("What is your \"on\" character? ")
     return on_char
 
 def get_off():
+    '''
+    Ask the user for what character to interpret as "off"
+
+    Returns:
+        off_char (str): off character.
+
+    '''
     off_char = input("What is your \"off\" character? ")
     return off_char
 
@@ -140,7 +154,7 @@ def get_rotation():
         rotate = 0
     return rotate
 
-def alpha_icon(icon_list, scale, on_print, off_print, on_char, off_char):
+def alpha_icon(icon_list, scale, on_print, off_print, on_char):
     '''
     This function takes the raw icon list, the scale integer, the 'on' string,
         and the 'off' string, creates 1 line of the icon, sends that line to
@@ -226,7 +240,7 @@ def main():
         on_print = "||"
         off_print = "  "
     # rotate = get_rotation()
-    alpha_icon(icon_list, scale, on_print, off_print, on_char, off_char)
+    alpha_icon(icon_list, scale, on_print, off_print, on_char)
 
 if __name__ == "__main__":
     main()
