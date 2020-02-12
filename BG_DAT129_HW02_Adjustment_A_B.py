@@ -37,9 +37,10 @@ def greeting():
 
     '''
     print("Hello, welcome to icon processing.\n")
-    print("Please have your icon ready as a single line of 1s & 0s.")
-    print("\t\"1s\" will be interpreted as a filled pixel.")
-    print("\t\"0s\" will be interpreted as a blank pixel.")
+    print("Please have your icon ready as a single line of characters"\
+          " in a binary arrangement.")
+    print("\tOne character will be interpreted as a filled pixel.")
+    print("\tThe other character will be interpreted as a blank pixel.")
     input("Press ENTER to when you are ready to continue.")
 
 def get_on():
@@ -64,13 +65,25 @@ def get_off():
     off_char = input("What is your \"off\" character? ")
     return off_char
 
+def get_on_pixels():
+    on_pixels = input("Please enter 1 character to be used"\
+                      " as an \"on\" pixel (recommended: \'@\'):  ")
+    on_pixels = on_pixels + " "
+    return on_pixels
+
+def get_off_pixels():
+    off_pixels = input("Please enter 1 character to be used"\
+                       " as an \"off\" pixel (recommended: \' \'):  ")
+    off_pixels = off_pixels + " "
+    return off_pixels
+
 def get_left_cut():
-    left_cut = int(input("How many left columns to cut?  "))
+    left_cut = int(input("How many left columns to cut? (less than 10):  "))
     left_cut = left_cut * 2
     return left_cut
 
 def get_right_cut():
-    right_cut = int(input("How many right columns to cut?  "))
+    right_cut = int(input("How many right columns to cut? (less than 10):  "))
     right_cut = right_cut * 2
     return right_cut
 
@@ -123,13 +136,10 @@ def get_scale():
 
 def get_invert():
     '''
-        Asks for input. The return value is interpreted later for a yes/no
+    Asks for input. The return value is interpreted later for a yes/no
 
-    Returns
-    -------
-    int
-        1: is a yes, invert
-        2: is a no, do not invert
+    Returns:
+        invert (int): returns either 1 or 0 which is interpreted later.
 
     '''
     while True:
@@ -164,7 +174,7 @@ def get_rotation():
         rotate = 0
     return rotate
 
-def alpha_icon(icon_list, scale, on_print, off_print, on_char,\
+def alpha_icon(icon_list, scale, on_print, off_print, on_char,
                left_cut, right_cut):
     '''
     This function takes the raw icon list, the scale integer, the 'on' string,
@@ -175,20 +185,17 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,\
     Once the end of the line is reached, send to beta_icon, then continue
         the for loop until end
 
-    Parameters
-    ----------
-    icon_list : LIST
-        List of numbers the user inputed to be turned into an icon.
-    scale : INT
-        The scale by which the icon should be amplified.
-   on_invert: STR
-        The chars for every "on" pixel in the icon.
-    off : STR
-        The chars for every "off" pixel in the icon.
+    Args:
+        icon_list (list): list of the users icon to be printed.
+        scale (int): an integer by which the users icon will be amplified.
+        on_print (str): the charecters to be printed as "on".
+        off_print (str): the charecters to be printed as "off".
+        on_char (str): the character the user wants to be interpreted as "on".
+        left_cut (int): how many pixels of the icon to cut from the left.
+        right_cut (int): how many pixels of the icon to cut from the right.
 
-    Returns
-    -------
-    None.
+    Returns:
+        None.
 
     '''
 
@@ -196,9 +203,6 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,\
     j = 0
     temp_left = left_cut * scale
     temp_right = -1 * right_cut * scale
-    print(left_cut, temp_left)
-    print(right_cut, temp_right)
-    input()
     for i in icon_list:
         j -= -1
         if i == on_char:
@@ -208,18 +212,6 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,\
         if len(building_str) == 10 * scale * 2:
             if left_cut > 0 or right_cut > 0:
                 building_str = building_str[temp_left:temp_right]
-
-
-
-# =============================================================================
-#             if left_cut > 0:
-#                 building_str = building_str[temp_left:]
-#             if right_cut > 0:
-#                 # print(building_str)
-#                 building_str = building_str[:temp_right]
-#                 # print(building_str)
-#                 # input()
-# =============================================================================
             building_str = beta_icon(building_str, scale)
 
 def beta_icon(print_str, scale):
@@ -249,30 +241,31 @@ def beta_icon(print_str, scale):
 def main():
     '''
     MAIN function.
-    Calls all of the other functions in the program.
-    With an if/else to decide what the print icon pixels should be.
+        Calls all of the other functions in the program.
+        With an if/else to decide what the print icon pixels should be.
 
-    Returns
-    -------
-    None.
+    Returns:
+        None.
 
     '''
     greeting()
     on_char = get_on()
     off_char = get_off()
+    on_pixels = get_on_pixels()
+    off_pixels = get_off_pixels()
     left_cut = get_left_cut()
     right_cut = get_right_cut()
     icon_list = get_icon(on_char, off_char)
     scale = get_scale()
     invert = get_invert()
     if invert == 1:
-        on_print = "  "
-        off_print = "@ "
+        on_print = off_pixels
+        off_print = on_pixels
     else:
-        on_print = "@ "
-        off_print = "  "
+        on_print = on_pixels
+        off_print = off_pixels
     # rotate = get_rotation()
-    alpha_icon(icon_list, scale, on_print, off_print, on_char,\
+    alpha_icon(icon_list, scale, on_print, off_print, on_char,
                left_cut, right_cut)
 
 if __name__ == "__main__":
