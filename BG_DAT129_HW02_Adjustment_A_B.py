@@ -64,6 +64,16 @@ def get_off():
     off_char = input("What is your \"off\" character? ")
     return off_char
 
+def get_left_cut():
+    left_cut = int(input("How many left columns to cut?  "))
+    left_cut = left_cut * 2
+    return left_cut
+
+def get_right_cut():
+    right_cut = int(input("How many right columns to cut?  "))
+    right_cut = right_cut * 2
+    return right_cut
+
 def get_icon(on_char, off_char):
     '''
         Asks the user for input. Stores to a list.
@@ -154,7 +164,8 @@ def get_rotation():
         rotate = 0
     return rotate
 
-def alpha_icon(icon_list, scale, on_print, off_print, on_char):
+def alpha_icon(icon_list, scale, on_print, off_print, on_char,\
+               left_cut, right_cut):
     '''
     This function takes the raw icon list, the scale integer, the 'on' string,
         and the 'off' string, creates 1 line of the icon, sends that line to
@@ -183,13 +194,32 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char):
 
     building_str = ""
     j = 0
+    temp_left = left_cut * scale
+    temp_right = -1 * right_cut * scale
+    print(left_cut, temp_left)
+    print(right_cut, temp_right)
+    input()
     for i in icon_list:
         j -= -1
         if i == on_char:
             building_str = building_str + scale * on_print
         else:
             building_str = building_str + scale * off_print
-        if j != 0 and j % 10 == 0:
+        if len(building_str) == 10 * scale * 2:
+            if left_cut > 0 or right_cut > 0:
+                building_str = building_str[temp_left:temp_right]
+
+
+
+# =============================================================================
+#             if left_cut > 0:
+#                 building_str = building_str[temp_left:]
+#             if right_cut > 0:
+#                 # print(building_str)
+#                 building_str = building_str[:temp_right]
+#                 # print(building_str)
+#                 # input()
+# =============================================================================
             building_str = beta_icon(building_str, scale)
 
 def beta_icon(print_str, scale):
@@ -230,17 +260,20 @@ def main():
     greeting()
     on_char = get_on()
     off_char = get_off()
+    left_cut = get_left_cut()
+    right_cut = get_right_cut()
     icon_list = get_icon(on_char, off_char)
     scale = get_scale()
     invert = get_invert()
     if invert == 1:
         on_print = "  "
-        off_print = "||"
+        off_print = "@ "
     else:
-        on_print = "||"
+        on_print = "@ "
         off_print = "  "
     # rotate = get_rotation()
-    alpha_icon(icon_list, scale, on_print, off_print, on_char)
+    alpha_icon(icon_list, scale, on_print, off_print, on_char,\
+               left_cut, right_cut)
 
 if __name__ == "__main__":
     main()
