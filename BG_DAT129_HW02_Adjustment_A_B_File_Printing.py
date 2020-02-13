@@ -67,23 +67,51 @@ def get_off():
     return off_char
 
 def get_on_pixels():
+    '''
+    Asks the user what they want the filled pixel to be
+
+    Returns:
+        on_pixels (str): character + ' '.
+
+    '''
     on_pixels = input("Please enter 1 character to be used"\
                       " as an \"on\" pixel (recommended: \'@\'):  ")
     on_pixels = on_pixels + " "
     return on_pixels
 
 def get_off_pixels():
+    '''
+    Asks the user what they want the empty pixel to be
+
+    Returns:
+        off_pixels (str): character + ' '.
+
+    '''
     off_pixels = input("Please enter 1 character to be used"\
                        " as an \"off\" pixel (recommended: \' \'):  ")
     off_pixels = off_pixels + " "
     return off_pixels
 
 def get_left_cut():
+    '''
+    Asks the user how many pixels to chop off the left side of the icon
+
+    Returns:
+        left_cut (int): number of pixels per line to omit from the left.
+
+    '''
     left_cut = int(input("How many left columns to cut? (less than 10):  "))
     left_cut = left_cut * 2
     return left_cut
 
 def get_right_cut():
+    '''
+    Asks the user how many pixels to chop off the right side of the icon
+
+    Returns:
+       right_cut (int): number of pixels per line to omit from the right.
+
+    '''
     right_cut = int(input("How many right columns to cut? (less than 10):  "))
     right_cut = right_cut * 2
     return right_cut
@@ -220,7 +248,10 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,
 def beta_icon(print_str, scale, k):
     '''
         Takes the first full line of the icon.
-        Prints the line multiplied by the scale (vertical scaling)
+        Creates a file to save the icon to.
+        First time through, the file is written to.
+        Second time ++ through, the file is appended to.
+        Prints the line multiplied by the scale (vertical scaling) ((console))
 
     Parameters
     ----------
