@@ -227,7 +227,6 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,
         None.
 
     '''
-
     building_str = ""
     j = 0
     k = 0
@@ -260,13 +259,13 @@ def beta_icon(print_str, scale, k):
     scale : INT
         Integer to scale the line by.
     k : INT
-        Integer tracking for how many lines have passed so far        
-    Returns
-    -------
-    none
+        Integer tracking for how many lines have passed so far
+
+    Returns:
+        print_str (str): a blank string to reset 'building_str' in the previous
+                            function, alpha_icon.
 
     '''
-
     if k == 0:
         file_out = open("icon.txt", "w")
     k -=- 1
