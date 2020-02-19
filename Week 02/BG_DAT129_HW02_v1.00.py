@@ -38,7 +38,7 @@ def greeting():
 
     '''
     print("Hello, welcome to icon processing.\n")
-    print("Please have your icon ready as a single line of characters"\
+    print("Please have your icon ready as a single line of 100 characters"\
           " in a binary arrangement.")
     print("\tOne character will be interpreted as a filled pixel.")
     print("\tThe other character will be interpreted as a blank pixel.")
