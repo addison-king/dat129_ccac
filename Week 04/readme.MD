@@ -1,5 +1,19 @@
 # Week 04
+# Learning Goals:
 
+ 1. Create a .json file which encodes a search criteria for capital
+    projects in Pittsburgh. Write python code which ingests that JSON
+    file and uses it when iterating over the capital projects file,
+    creating an output file featuring only projects that match your
+    criteria.
+ 2. Create a markdown file in your capital projects work folder that
+    details how to use your JSON file to encode a search criteria.
+    Include at least three different criteria in your search.
+ 3. Include basic exception handling to respond to poorly formed JSON
+    queries.
+ 4. Push your changes to your own github repository.
+
+# Assignment:
 ## JSON encoding
 
 ### _live_help_Guiding questions
