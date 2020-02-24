@@ -249,12 +249,10 @@ def alpha_icon(icon_list, scale, on_print, off_print, on_char,
     '''
     building_str = ""
     i = 0
-    j = 0
     k = 0
     temp_left = left_cut * scale
     temp_right = -1 * right_cut * scale
     for i in icon_list:
-        j -= -1
         if i == on_char:
             building_str = building_str + scale * on_print
         else:
