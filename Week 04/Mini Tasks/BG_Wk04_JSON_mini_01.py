@@ -59,6 +59,7 @@ def _combine_title_contents(title, contents):
             row_dict.update({title[i]:item})
             i += 1
         rows_list.append(row_dict)
+        row_dict = {}
     return rows_list      
 
 def _printing(PGH_list, printing_keys):
