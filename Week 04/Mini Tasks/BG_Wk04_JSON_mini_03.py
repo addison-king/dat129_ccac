@@ -90,7 +90,7 @@ def _printing(PGH_list, printing_keys, errors):
     '''
     Pretty prints each line from the .csv file with the header column.
         (Probably was a more efficient way of setting the info up before
-         printing, but cie la vie).
+         printing, but c'est la vie).
 
     Parameters
     ----------
