@@ -6,3 +6,5 @@ id,name,task_description,area,budgeted_amount,status,asset_id,asset_type,fiscal_
 302632301,,Exterior Masonry Repairs,,,Completed,Firehouse 19,Facility,2017,8/2/2017,f,Swisshelm Park,5,14,42003141100,3,14,4,19-Feb,40.42081761,-79.89982829
 1947652660,,demo park,,,Completed,Fineview Park Sports Court 1,Court,2019,4/23/2019,,Fineview,1,25,42003250900,1,25,1,10-Jan,40.46175343,-80.00398186
 9999999999,TESTING,This id is a test to check for empty values,,,,,,,,,,,,,,,,,,
+579358971,CARNAHAN ROAD WENZELL AVENUE (TIP),Construction,Admission,2240000,Planned,Carnahan Road Bridge,Bridge,2017,2/8/2017,f,Banksville,2,20,42003202300,5,20,6,9-Apr,40.40714062,-80.03434176
+579358971,CARNAHAN ROAD WENZELL AVENUE (TIP),Construction,Testing,2240000,Planned,Carnahan Road Bridge,Bridge,2017,2/8/2017,f,Banksville,2,20,42003202300,5,20,6,9-Apr,40.40714062,-80.03434176
