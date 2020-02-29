@@ -7,16 +7,23 @@ Brandyn Gilbert
 """
 #PLAN
 # =============================================================================
-# # # Purpose # # #
-# # Implement search criteria defined in the JSON format for searching for 
-# # capital projects in PGH dataset, outputting resulting projects into a 
+# # # # Purpose # # #
+# # Implement search criteria defined in the JSON format for searching for
+# # capital projects in PGH dataset, outputting resulting projects into a
 # # file in JSON format
+# # Write code that can read in a search criterion JSON file of your
+# # specification. You'll need to be prepared to share this specification
+# # with others in the class
 # =============================================================================
+# # Allow the user to specify search criteria for project fiscal year,
+# # start date, area, asset_type, and planning status
+# =============================================================================
+
 
 
 def main():
 
     print()
-    
+
 if __name__ == "__main__":
     main()
