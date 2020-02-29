@@ -20,9 +20,9 @@ Write code that can read in a search criterion JSON file of your specification. 
 
 Allow the user to specify search criteria for project fiscal year, start date, area, asset_type, and planning status
 
-## ~~program requirement 2: management costs
+## ~~program requirement 2: management costs~~
 
-Write a method that will calculate total project management costs for all the capital projects in Pittsburgh given a management cost scheme, encoded in JSON as specified by the class. Example: For all projects up to $10k, management costs are 8% of the total project budget. For projects between $10k and $100k, management costs drop to 5%, and over $100k, costs increase to 11%.~~
+~~Write a method that will calculate total project management costs for all the capital projects in Pittsburgh given a management cost scheme, encoded in JSON as specified by the class. Example: For all projects up to $10k, management costs are 8% of the total project budget. For projects between $10k and $100k, management costs drop to 5%, and over $100k, costs increase to 11%.~~
 
 
 ---
