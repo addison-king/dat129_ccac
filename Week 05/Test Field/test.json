@@ -1,0 +1,35 @@
+{
+   "data": {
+      "id": 73244,
+      "seriesId": "22343",
+      "seriesName": "The Office (US)",
+      "aliases": [
+         "The Office US"
+      ],
+      "season": "9",
+      "poster": "posters/73244-1.jpg",
+      "banner": "graphical/73244-g9.jpg",
+      "fanart": "fanart/original/73244-32.jpg",
+      "status": "Ended",
+      "firstAired": "2005-03-24",
+      "network": "NBC",
+      "networkId": "148",
+      "runtime": "25",
+      "language": "en",
+      "genre": [
+         "Comedy"
+      ],
+      "overview": "A fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. This fast-paced comedy parodies contemporary American water-cooler culture.",
+      "lastUpdated": 1582929260,
+      "airsDayOfWeek": "",
+      "airsTime": "",
+      "rating": "TV-14",
+      "imdbId": "tt0386676",
+      "zap2itId": "SH00726133",
+      "added": "2008-02-04 00:00:00",
+      "addedBy": 1,
+      "siteRating": 8.9,
+      "siteRatingCount": 9021,
+      "slug": "the-office-us"
+   }
+}

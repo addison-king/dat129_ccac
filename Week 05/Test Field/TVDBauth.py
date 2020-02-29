@@ -8,30 +8,50 @@ Brandyn Gilbert
 #PLAN
 
 import requests
+import json
 
 
-
-headers = {
+header = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
 }
 
 data = '{\n "apikey": "f538d2864846dd50a311ad8542b40f7d",\
-         \n  "userkey": "XCXVRW13LTK0XFJY",\
-         \n  "username": "falconfoe"\n}'
+          \n  "userkey": "XCXVRW13LTK0XFJY",\
+          \n  "username": "falconfoe"\n}'
 
 response = requests.post('https://api.thetvdb.com/login',
-                          headers=headers, data=data)
+                          headers=header, data=data)
+r_text = response.text
+# print(r_text)
+# print(type(r_text))
+# input()
 
-# response = requests.post('https://api.thetvdb.com/episodes/73244',
-#                          headers=headers, data=data)
+rj_text = json.loads(r_text)
+# print(rj_text)
+# print(type(rj_text))
+# print(rj_text['token'])
+# input()
 
-print(response.content)
+token = rj_text['token']
+token_auth = 'Bearer '+ token
+auth = {'Authorization': token_auth}
+
+headers = {
+    'Accept': 'application/json',
+    'Authorization': token_auth,
+}
+
+r = requests.get('https://api.thetvdb.com/series/73244', headers=headers)
+# office = requests.get('https://api.thetvdb.com/episodes/110413', headers=headers)
+text = r.text
+j_text = json.loads(text)
+
+print(j_text)
+print(type(j_text))
+
+out_file = open("test.json", "w")
+json.dump(j_text, out_file, indent=1)
 
 
-
-# headers = {
-#     'Accept': 'application/json',
-# }
-
-# response = requests.get('https://api.thetvdb.com/episodes/73244', headers=headers)
+print(office.text)
