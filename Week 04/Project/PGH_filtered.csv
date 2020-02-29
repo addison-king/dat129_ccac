@@ -1,0 +1,219 @@
+id,name,task_description,area,budgeted_amount,status,asset_id,asset_type,fiscal_year,start_date,inactive,neighborhood,council_district,ward,tract,public_works_division,pli_division,police_zone,fire_zone,latitude,longitude
+1850147310,BRIDGE REPAIRS,Columbus Avenue Bridge Handicapped Ramp and Intersection Improvements,Engineering and Construction,100000,Planned,Columbus Avenue Bridge,Bridge,2017,2017-02-08,f,Manchester,6,21,42003210700,1,21,1,1-8,40.45848456,-80.02443938
+578777540,CARNAHAN ROAD WENZELL AVENUE (TIP),Construction,Engineering and Construction,560000,Planned,Carnahan Road Bridge,Bridge,2017,2017-02-08,f,Banksville,2,20,42003202300,5,20,6,4-9,40.40714062,-80.03434176
+579358971,CARNAHAN ROAD WENZELL AVENUE (TIP),Construction,Engineering and Construction,2240000,Planned,Carnahan Road Bridge,Bridge,2017,2017-02-08,f,Banksville,2,20,42003202300,5,20,6,4-9,40.40714062,-80.03434176
+726259916,CHARLES ANDERSON BRIDGE (TIP),Preliminary Engineering Phase,Engineering and Construction,35450,Planned,Charles Anderson Bridge,Bridge,2017,2017-02-08,f,Central Oakland,3,4,42003040900,3,4,4,2-8,40.43441416,-79.95013126
+2027345037,CHARLES ANDERSON BRIDGE (TIP),Preliminary Engineering Phase,Engineering and Construction,673550,Planned,Charles Anderson Bridge,Bridge,2017,2017-02-08,f,Central Oakland,3,4,42003040900,3,4,4,2-8,40.43441416,-79.95013126
+1333025252,GREENFIELD AVENUE BRIDGE (TIP),Construction,Engineering and Construction,40000,Completed,Beechwood Boulevard Bridge,Bridge,2017,2017-02-08,f,Greenfield,5,15,42003151700,3,15,4,2-12,40.42839915,-79.93795474
+731599247,GREENFIELD AVENUE BRIDGE (TIP),Construction,Engineering and Construction,760000,Completed,Beechwood Boulevard Bridge,Bridge,2017,2017-02-08,f,Greenfield,5,15,42003151700,3,15,4,2-12,40.42839915,-79.93795474
+1911757466,McFARREN STREET (SECOND AVENUE) BRIDGE (TIP),"Final Design, Utility Clearance",Engineering and Construction,35750,In Progress,MacFarren St Bridge,Bridge,2018,2018-02-08,f,,5,,42003141400,,,,,40.41516123,-79.91564882
+1537317222,McFARREN STREET (SECOND AVENUE) BRIDGE (TIP),"Final Design, Utility Clearance",Engineering and Construction,679250,In Progress,MacFarren St Bridge,Bridge,2018,2018-02-08,f,,5,,42003141400,,,,,40.41516123,-79.91564882
+1949240942,WEST OHIO STREET BRIDGE (TIP),Construction Phase,Engineering and Construction,130500,Planned,West Ohio Street Bridge,Bridge,2017,2017-02-08,f,Allegheny West,1,22,42003562700,1,22,1,1-7,40.45161859,-80.01067255
+1975162648,WEST OHIO STREET BRIDGE (TIP),Construction Phase,Engineering and Construction,2479500,Planned,West Ohio Street Bridge,Bridge,2017,2017-02-08,f,Allegheny West,1,22,42003562700,1,22,1,1-7,40.45161859,-80.01067255
+1617483728,AUDIBLE PEDESTRIAN AND TRAFFIC SIGNALS,Brownsville Road and Parkfield Street,Engineering and Construction,100000,In Progress,TS168,Signalized Intersection,2018,2018-02-08,f,Carrick,4,29,42003290400,3,29,3,4-12,40.391331,-79.98660607
+868104804,AUDIBLE PEDESTRIAN AND TRAFFIC SIGNALS,Walnut Street and South Aiken Avenue Traffic Signal Update,Engineering and Construction,200000,Completed,TS7,Signalized Intersection,2018,2018-01-16,f,Shadyside,8,7,42003070300,2,7,4,3-22,40.45063462,-79.9355028
+439928329,BIKE INFRASTRUCTURE,Bike Facilities - Baum/Centre Crossing,Engineering and Construction,100000,Planned,TS216,Signalized Intersection,2017,2017-02-08,f,Shadyside,8,7,42003070900,2,7,4,3-11,40.4572618,-79.93405726
+1806724539,PENNDOT LOCAL SHARE (TIP),Signal Replacement,Engineering and Construction,3000,Planned,TS267,Signalized Intersection,2017,2017-02-08,f,East Allegheny,1,23,42003563200,1,23,1,1-6,40.45641846,-79.99866027
+168702050,STEP REPAIR AND REPLACEMENT,Carnahan Road/Banksville Steps,Engineering and Construction,125000,Planned,Carnahan Rd at Younger Ave from Banksville Ave,Step,2017,2017-02-08,f,Banksville,2,20,42003202300,5,20,6,4-9,40.40681922,-80.03601023
+1274317060,STEP REPAIR AND REPLACEMENT,Lower Oakley Street Steps/Phase 2,Engineering and Construction,60000,Completed,Oakley Way from Joesphine St to McCord St,Step,2017,2017-02-08,f,South Side Slopes,3,16,42003160800,3,16,3,4-24,40.42353074,-79.9686893
+1358827067,SLOPE FAILURE REMEDIATION,Baldauf Street Wall,Engineering and Construction,150000,Completed,Baldauf St,Retaining Wall,2017,2017-02-08,f,South Side Slopes,3,17,42003170600,3,17,3,4-3,40.42303306,-79.98001595
+976733348,SLOPE FAILURE REMEDIATION,Brahm Street Wall,Engineering and Construction,400000,Completed,Brahm St,Retaining Wall,2017,2017-02-08,f,Spring Hill-City View,1,24,42003262000,1,24,1,1-24,40.46491451,-79.99852714
+909184333,BRIDGE REPAIRS,Columbus Ave Bridge wall repair,Engineering and Construction,50000,Planned,Manchester Park 1,Sidewalk,2017,2017-02-08,f,Manchester,6,21,42003210700,1,21,1,1-8,40.45835404,-80.02503256
+1141647367,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Grandview Avenue Sidewalk and Curb Repair,Engineering and Construction,200000,Planned,Grandview Overlook,Sidewalk,2017,2017-02-08,f,Mount Washington,2,19,42003190300,5,19,3,4-27,40.43325756,-80.00924406
+1709604652,BIKE INFRASTRUCTURE,Bike Lanes - 18th Street,Engineering and Construction,110000,Planned,,Non-Asset,2017,2017-03-01,f,South Side Slopes,3,17,42003160800,3,17,3,4-3,40.42239981,-79.97831977
+1543255831,BIKE INFRASTRUCTURE,Bike Lanes - Ellsworth Avenue,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-03-01,f,Shadyside,8,7,42003070300,2,7,4,3-22,40.45275109,-79.9366742
+1082939755,AUDIBLE PEDESTRIAN AND TRAFFIC SIGNALS,Haberman/Warrington/Busway Intersection Signal Update Design and Construction,Engineering and Construction,25000,Canceled,,Non-Asset,2017,2017-03-02,f,Mount Washington,3,18,42003562400,5,18,3,4-16,40.42108072,-80.00245965
+225411715,18TH STREET SIGNAL UPDATES (TIP),Preliminary Engineering,Engineering and Construction,52600,In Progress,,Non-Asset,2018,2018-02-08,f,South Side Slopes,3,17,42003160800,3,17,3,4-3,40.42239573,-79.97832514
+1782220567,18TH STREET SIGNAL UPDATES (TIP),Preliminary Engineering,Engineering and Construction,210400,In Progress,,Non-Asset,2018,2018-02-08,f,South Side Slopes,3,17,42003160800,3,17,3,4-3,40.42254275,-79.97820176
+856704340,BIKE INFRASTRUCTURE,Bike Lanes - Brighton Road,Engineering and Construction,70000,Planned,,Non-Asset,2017,2017-03-02,f,California-Kirkbride,6,25,42003220600,1,25,1,1-21,40.45610355,-80.01540399
+1856775266,"PENN AVENUE RECONSTRUCTION, PHASE II (TIP)",Final Design,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-03-02,f,Bloomfield,7,8,42003080900,2,8,5,3-23,40.46475233,-79.94117118
+1379514684,"PENN AVENUE RECONSTRUCTION, PHASE II (TIP)",Penn Avenue and Evaline Street,Engineering and Construction,400000,In Progress,,Non-Asset,2018,2018-02-08,f,Bloomfield,7,8,42003080900,2,8,5,3-23,40.46475642,-79.94117654
+520868950,SMITHFIELD STREET (TIP),Smithfield Street - Forbes Avenue to 6th Avenue,Engineering and Construction,150000,Planned,,Non-Asset,2017,2017-03-02,f,Central Business District,6,2,42003020100,6,2,2,1-3,40.44144372,-79.99774433
+2142286454,SMITHFIELD STREET (TIP),Smithfield Street - Forbes Avenue to 6th Avenue,Engineering and Construction,600000,Planned,,Non-Asset,2017,2017-03-02,f,Central Business District,6,2,42003020100,6,2,2,1-3,40.4414478,-79.9977497
+1270928541,STREET RESURFACING,Sampsonia Way Green Alley,Engineering and Construction,150000,Planned,,Non-Asset,2017,2017-03-02,f,Central Northside,1,25,42003250300,1,25,1,1-21,40.456984,-80.011381
+1431663848,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Allegheny Circle Phase 2 (SMART),Engineering and Construction,735343,In Progress,,Non-Asset,2018,2018-02-08,f,Allegheny Center,1,22,42003562700,1,22,1,1-6,40.45244494,-80.00557134
+2109039920,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Allegheny Circle Phase 2 (SMART),Engineering and Construction,741196,In Progress,,Non-Asset,2018,2018-02-08,f,Allegheny Center,1,22,42003562700,1,22,1,1-6,40.45244902,-80.0055767
+714423902,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Broadway Avenue Complete Streets Streetscape Improvements - Design,Engineering and Construction,150000,In Progress,,Non-Asset,2018,2018-02-08,f,Beechview,2,20,42003192000,5,20,6,4-28,40.40651309,-80.02824245
+869288104,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Haberman/Warrington/Busway Intersection Crosswalks and Signage,Engineering and Construction,15000,Canceled,,Non-Asset,2017,2017-03-02,f,Beltzhoover,3,18,42003562400,5,18,3,4-16,40.42106172,-80.00242376
+1005385149,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Lowrie Street,Engineering and Construction,80000,Completed,,Non-Asset,2017,2017-03-02,f,Troy Hill,1,24,42003240600,1,24,1,1-2,40.46448031,-79.98211894
+1416406457,STREETSCAPE AND INTERSECTION RECONSTRUCTION,SS Neighborhood Street (SMART),Engineering and Construction,149857,In Progress,,Non-Asset,2018,2018-02-08,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.4299465,-79.98192829
+979007814,STREETSCAPE AND INTERSECTION RECONSTRUCTION,SS Neighborhood Street (SMART),Engineering and Construction,599426,In Progress,,Non-Asset,2018,2018-02-08,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42995058,-79.98193366
+10706957,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Trelona Way Reconstruction,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-03-02,f,Brookline,4,19,42003191800,5,19,6,4-26,40.39361083,-80.0206433
+1281040949,TRAIL DEVELOPMENT,Mon Wharf Switchback - Design and Construction,Engineering and Construction,100000,In Progress,,Non-Asset,2018,2018-02-08,f,Central Business District,6,1,42003020100,6,1,2,1-4,40.43632668,-80.00120052
+1331003671,TRAIL DEVELOPMENT,Mon Wharf Switchback - Design and Construction,Engineering and Construction,2900000,In Progress,,Non-Asset,2018,2018-02-08,f,Central Business District,6,1,42003020100,6,1,2,1-4,40.43633076,-80.00120589
+2069679765,TRAIL DEVELOPMENT,Washington Boulevard Multimodal Path Design/Engineering (SMART Transportation Grant),Engineering and Construction,109755,Planned,,Non-Asset,2017,2017-03-15,f,Highland Park,7,12,42003980100,2,12,5,3-15,40.48397493,-79.9078933
+1715780576,TRAIL DEVELOPMENT,Washington Boulevard Multimodal Path Construction (SMART Transportation Grant),Engineering and Construction,448471,Planned,,Non-Asset,2017,2017-03-15,f,Highland Park,7,12,42003980100,2,12,5,3-15,40.48397901,-79.90789867
+714473310,RAMP AND PUBLIC SIDEWALK,Pinecastle Avenue sidewalk reconstruction,Engineering and Construction,50000,Completed,Pinecastle Ave,Sidewalk,2017,2017-03-15,f,Overbrook,4,32,42003320700,5,32,3,4-25,40.38266563,-79.99840383
+130752420,CHARLES ANDERSON BRIDGE (TIP),Charles Anderson Bridge - Final Design,Engineering and Construction,2000000,Planned,Charles Anderson Bridge,Bridge,2018,2018-02-12,f,Central Oakland,3,4,42003040900,3,4,4,2-8,40.43441416,-79.95013126
+1309090115,SWINBURNE BRIDGE (TIP),Swinburne Bridge - Preliminary Design,Engineering and Construction,800000,Planned,Swinburne Street Bridge,Bridge,2018,2018-02-12,f,Greenfield,5,15,42003151600,3,15,4,2-12,40.42654976,-79.95038697
+2104348746,WEST OHIO STREET BRIDGE (TIP),West Ohio Street Bridge - Construction,Engineering and Construction,394176.2,Planned,West Ohio Street Bridge,Bridge,2018,2018-02-12,f,Allegheny West,1,22,42003562700,1,22,1,1-7,40.45161859,-80.01067255
+1297955858,STEP REPAIR AND REPLACEMENT,Stanton Ave to McCandless Ave Step Repairs,Engineering and Construction,150000,Planned,Stanton Ave to McCandless Ave,Step,2018,2018-02-12,f,Stanton Heights,9,10,42003101800,2,10,5,3-5,40.47789242,-79.94748184
+324645709,SLOPE FAILURE REMEDIATION,,Engineering and Construction,1500000,Planned,Brahm St,Retaining Wall,2018,2018-02-12,f,Spring Hill-City View,1,24,42003262000,1,24,1,1-24,40.46491451,-79.99852714
+957216866,AUDIBLE PEDESTRIAN AND TRAFFIC SIGNALS,Countdown Pedestrian Signal Upgrade,Engineering and Construction,70000,Planned,TS529,Signalized Intersection,2018,2018-02-12,f,Squirrel Hill North,8,14,42003140300,3,14,4,2-18,40.44385115,-79.92051276
+1320892726,AUDIBLE PEDESTRIAN AND TRAFFIC SIGNALS,North Avenue - Design,Engineering and Construction,626000,Planned,TS206,Signalized Intersection,2018,2018-02-12,f,East Allegheny,1,22,42003563200,1,22,1,1-6,40.45621897,-80.00262081
+503209239,STEP REPAIR AND REPLACEMENT,,Engineering and Construction,125000,Planned,Wenzell Ave from Tole St to Louisiana Ave,Step,2018,2018-02-14,f,Beechview,2,20,42003192000,5,20,6,4-28,40.4044739,-80.03340489
+171113822,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Final Design,Engineering and Construction,100000,Planned,TS279,Signalized Intersection,2018,2018-02-14,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42695281,-79.98074075
+1094206348,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Final Design,Engineering and Construction,100000,Planned,TS281,Signalized Intersection,2018,2018-02-14,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42783844,-79.98065191
+2075086284,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Final Design,Engineering and Construction,100000,Planned,TS280,Signalized Intersection,2018,2018-02-14,f,South Side Slopes,3,17,42003170600,3,17,3,4-3,40.423827,-79.97769255
+716043040,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Preliminary Design,Engineering and Construction,65667,Planned,TS279,Signalized Intersection,2018,2018-02-14,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42695281,-79.98074075
+1873229476,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Preliminary Design,Engineering and Construction,65667,Planned,TS281,Signalized Intersection,2018,2018-02-14,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42783844,-79.98065191
+872441123,18TH STREET SIGNAL UPDATES (TIP),18th Street Signal Upgrades - Preliminary Design,Engineering and Construction,65667,Planned,TS280,Signalized Intersection,2018,2018-02-14,f,South Side Slopes,3,17,42003170600,3,17,3,4-3,40.423827,-79.97769255
+458321222,SLOPE FAILURE REMEDIATION,,Engineering and Construction,375000,Planned,Henderson St from Sandusky Ct,Retaining Wall,2018,2018-02-14,f,Fineview,6,25,42003250900,1,25,1,1-10,40.45918436,-80.00643498
+490890861,SLOPE FAILURE REMEDIATION,,Engineering and Construction,375000,Planned,Henderson St from Fountain St,Retaining Wall,2018,2018-02-14,f,Fineview,6,25,42003250900,1,25,1,1-10,40.45910357,-80.00499961
+1362156198,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Broadway Avenue Complete Streets,Engineering and Construction,300000,Planned,,Non-Asset,2018,2018-02-14,f,Beechview,4,19,42003192000,5,19,6,4-28,40.41015299,-80.02469457
+2129028466,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Centre Avenue - Preliminary Engineering,Engineering and Construction,250000,Planned,,Non-Asset,2018,2018-02-14,f,Crawford-Roberts,6,3,42003030500,3,3,2,2-1,40.44358933,-79.98036024
+223087014,McFARREN STREET (SECOND AVENUE) BRIDGE (TIP),Bridge Construction,Engineering and Construction,3382000,Planned,MacFarren St Bridge,Bridge,2018,2018-03-07,f,,5,,42003141400,,,,,40.41516123,-79.91564882
+1189705260,WEST OHIO STREET BRIDGE (TIP),WEST OHIO STREET BRIDGE - CONSTRUCTION,Engineering and Construction,12800,Planned,West Ohio Street Bridge,Bridge,2019,2019-02-05,f,Allegheny West,1,22,42003562700,1,22,1,1-7,40.45161859,-80.01067255
+3930462,WEST OHIO STREET BRIDGE (TIP),WEST OHIO STREET BRIDGE - CONSTRUCTION,Engineering and Construction,243200,Planned,West Ohio Street Bridge,Bridge,2019,2019-02-05,f,Allegheny West,1,22,42003562700,1,22,1,1-7,40.45161859,-80.01067255
+1140223144,COMPLETE STREETS,CENTRE & DITHRIDGE - INTERSECTION UPGRADES,Engineering and Construction,50000,Planned,2588,Pavement,2019,2019-02-05,f,North Oakland,8,4,42003562000,3,4,4,2-23,40.4513834,-79.95369731
+220656954,COMPLETE STREETS,CENTRE AVE - PRELIMINARY ENGINEERING,Engineering and Construction,250000,Planned,18580,Pavement,2019,2019-02-05,f,Middle Hill,6,5,42003050100,3,5,2,2-1,40.44472099,-79.97800878
+108005428,COMPLETE STREETS,MELWOOD - TRAFFIC CALMING,Engineering and Construction,100000,Planned,4487,Pavement,2019,2019-02-05,f,Polish Hill,7,6,42003060500,6,6,2,2-6,40.45871548,-79.96225072
+1510370888,COMPLETE STREETS,SHADY AVE - TRAFFIC CALMING STUDY,Engineering and Construction,60000,Planned,7039,Pavement,2019,2019-02-05,f,Point Breeze,8,14,42003140400,3,14,4,2-17,40.45005418,-79.92064992
+162720900,COMPLETE STREETS,STRIP DISTRICT - BIKE INFRASTRUCTURE PLANNING,Engineering and Construction,150000,Planned,11858,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.4492631,-79.9867885
+1343319926,COMPLETE STREETS,WALNUT STREET - INTERSECTION UPGRADES,Engineering and Construction,100000,Planned,11275,Pavement,2019,2019-02-05,f,Shadyside,8,7,42003070300,2,7,4,3-22,40.45069761,-79.9353139
+1747157429,COMPLETE STREETS,WARRINGTON & BOGGSTON - TRAFFIC CALMING,Engineering and Construction,100000,Planned,18684,Pavement,2019,2019-02-05,f,Beltzhoover,3,18,42003562400,5,18,3,4-16,40.41809817,-80.00948849
+336270312,EAST CARSON STREET,EAST CARSON STREET - CONSTRUCTION,Engineering and Construction,2000000,Planned,7490,Pavement,2019,2019-02-05,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42879689,-79.98130455
+1186182493,FLOOD CONTROL PROJECTS,GLENBURY - WATER MITIGATION,Engineering and Construction,1000000,Planned,1743,Pavement,2019,2019-02-05,f,Overbrook,4,32,42003320700,5,32,3,4-25,40.38409004,-79.99852054
+267387200,FLOOD CONTROL PROJECTS,SAINT NORBERTS ST - WATER MITIGATION,Engineering and Construction,500000,Planned,7129,Pavement,2019,2019-02-05,f,Overbrook,4,32,42003320400,5,32,3,4-25,40.38382721,-79.99561241
+963683720,FLOOD CONTROL PROJECTS,STEWART AVE - WATER MITIGATION,Engineering and Construction,500000,Planned,1502,Pavement,2019,2019-02-05,f,Carrick,4,32,42003290400,3,32,3,4-23,40.38114229,-79.9848958
+970880004,FLOOD CONTROL PROJECTS,VODELI STREET - WATER MITIGATION,Engineering and Construction,500000,Planned,13502,Pavement,2019,2019-02-05,f,Beechview,4,19,42003192000,5,19,6,4-28,40.40329394,-80.02808955
+893819277,FLOOD CONTROL PROJECTS,WALDE ST - STREET DRAINAGE UPGRADES,Engineering and Construction,250000,Planned,12970,Pavement,2019,2019-02-05,f,Mount Oliver Borough,,0,42003481000,0,0,,Mt Oliver,40.41039699,-79.98179904
+1934747185,LIBERTY AVENUE (HSIP),LIBERTY AVE (HSIP) - FINAL DESIGN,Engineering and Construction,100000,Planned,954,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.44985304,-79.98434572
+454208439,LIBERTY AVENUE (HSIP),LIBERTY AVE (HSIP) - FINAL DESIGN,Engineering and Construction,400000,Planned,954,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.44985304,-79.98434572
+1509440906,LIBERTY AVENUE (HSIP),LIBERTY AVE (HSIP) - PRELIMINARY ENGINEERING,Engineering and Construction,55000,Planned,954,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.44985304,-79.98434572
+190288804,LIBERTY AVENUE (HSIP),LIBERTY AVE (HSIP) - PRELIMINARY ENGINEERING,Engineering and Construction,220000,Planned,954,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.44985304,-79.98434572
+1139160330,RAMP AND PUBLIC SIDEWALK,SAINT JOSEPH ST - SIDEWALK UPGRADES,Engineering and Construction,100000,Planned,5876,Pavement,2019,2019-02-05,f,Mt. Oliver,3,16,42003561700,3,16,3,4-8,40.41332198,-79.97734935
+284574447,SMALLMAN STREET RECONSTRUCTION,SMALLMAN STREET -  RECONSTRUCTION,Engineering and Construction,1000000,Planned,5012,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.45116652,-79.98551249
+1819629922,SMALLMAN STREET RECONSTRUCTION,SMALLMAN STREET -  RECONSTRUCTION,Engineering and Construction,1730000,Planned,5012,Pavement,2019,2019-02-05,f,Strip District,7,2,42003020300,6,2,2,2-3,40.45116652,-79.98551249
+798714177,SMITHFIELD STREET (TIP),SMITHFIELD ST - PRELIMINARY ENGINEERING,Engineering and Construction,90000,Planned,15575,Pavement,2019,2019-02-05,f,Central Business District,6,2,42003020100,6,2,2,1-4,40.43974922,-79.99887011
+585086223,SMITHFIELD STREET (TIP),SMITHFIELD ST - PRELIMINARY ENGINEERING,Engineering and Construction,360000,Planned,15575,Pavement,2019,2019-02-05,f,Central Business District,6,2,42003020100,6,2,2,1-4,40.43974922,-79.99887011
+842575827,28TH STREET BRIDGE (TIP),28TH STREET BRIDGE - PRELIMINARY ENGINEERING,Engineering and Construction,37500,Planned,28th Street Bridge,Bridge,2019,2019-02-06,f,Strip District,7,6,42003060500,6,6,2,2-25,40.45604242,-79.97374797
+1365853602,28TH STREET BRIDGE (TIP),28TH STREET BRIDGE - PRELIMINARY ENGINEERING,Engineering and Construction,712500,Planned,28th Street Bridge,Bridge,2019,2019-02-06,f,Strip District,7,6,42003060500,6,6,2,2-25,40.45604242,-79.97374797
+860367290,BRIDGE UPGRADES,30TH STREET BRIDGE UPGRADE,Engineering and Construction,175000,Planned,Herr's Island Bridge,Bridge,2019,2019-02-06,f,Troy Hill,1,24,42003240600,6,24,1,1-1,40.46386545,-79.97888605
+525286793,BRIDGE UPGRADES,LOWRIE STREET - BRIDGE UPGRADES,Engineering and Construction,200000,Planned,Lowrie Street Bridge,Bridge,2019,2019-02-06,f,Troy Hill,1,24,42003240600,1,24,1,1-2,40.46571991,-79.98119287
+251539663,SLOPE FAILURE REMEDIATION,BRAHM STREET WALL - SLOPE IMPROVEMENTS,Engineering and Construction,1500000,Planned,Brahm St,Retaining Wall,2019,2019-02-06,f,Spring Hill-City View,1,24,42003262000,1,24,1,1-24,40.46491451,-79.99852714
+267170034,SLOPE FAILURE REMEDIATION,HENDERSON ST - WALL IMPROVEMENTS,Engineering and Construction,750000,Planned,Henderson St from Fountain St,Retaining Wall,2019,2019-02-06,f,Fineview,6,25,42003250900,1,25,1,1-10,40.45910357,-80.00499961
+666812560,SLOPE FAILURE REMEDIATION,LANDER ST - SLOPE IMPROVEMENTS,Engineering and Construction,850000,Planned,Mardo Way,Retaining Wall,2019,2019-02-06,f,Elliott,2,20,42003562600,5,20,6,1-17,40.44344875,-80.03429015
+2010806451,SLOPE FAILURE REMEDIATION,LOWER WILLIAM ST - SLOPE IMPROVEMENTS,Engineering and Construction,500000,Planned,Arlington Ave from William St,Retaining Wall,2019,2019-02-06,f,Allentown,3,18,42003180300,5,18,3,4-5,40.42810632,-79.99685129
+1493569808,SLOPE FAILURE REMEDIATION,NEWTON ST - SLOPE IMPROVEMENTS,Engineering and Construction,1000000,Planned,Arlington Ave from PJ McArdle Rdwy to Newton St,Retaining Wall,2019,2019-02-06,f,South Side Slopes,3,18,42003170600,3,18,3,4-5,40.42775881,-79.99557789
+1500353737,SLOPE FAILURE REMEDIATION,PARKWOOD ST - SLOPE IMPROVEMENTS,Engineering and Construction,250000,Planned,Parkwood Rd,Retaining Wall,2019,2019-02-06,f,Arlington,3,16,42003561600,3,16,3,4-8,40.41420353,-79.98042191
+235052765,SLOPE FAILURE REMEDIATION,UPPER WILLIAM ST - SLOPE IMPROVEMENTS,Engineering and Construction,200000,Planned,William St 1,Retaining Wall,2019,2019-02-06,f,Mount Washington,2,19,42003191400,5,19,3,4-5,40.42742648,-80.00483227
+664550967,18TH STREET SIGNAL UPDATES (TIP),18TH STREET SIGNALS -  FINAL DESIGN,Engineering and Construction,23000,Planned,TS279,Signalized Intersection,2019,2019-02-06,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42695281,-79.98074075
+412892934,18TH STREET SIGNAL UPDATES (TIP),18TH STREET SIGNALS -  FINAL DESIGN,Engineering and Construction,92000,Planned,TS279,Signalized Intersection,2019,2019-02-06,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42695281,-79.98074075
+2002519183,COMPLETE STREETS,40TH & PENN - SIGNAL UPGRADES,Engineering and Construction,155000,Planned,TS356,Signalized Intersection,2019,2019-02-06,f,Bloomfield,7,6,42003090300,2,6,2,3-6,40.46518232,-79.9579611
+883263912,COMPLETE STREETS,AIKEN & CENTRE - PEDESTRIAN SIGNAL UPGRADES,Engineering and Construction,205000,Planned,TS2,Signalized Intersection,2019,2019-02-06,f,Shadyside,8,7,42003070900,2,7,4,3-23,40.4559097,-79.93859121
+720099362,COMPLETE STREETS,ALLEGHENY CIRCLE - PHASE II CONSTRUCTION,Engineering and Construction,100000,Planned,TS237,Signalized Intersection,2019,2019-02-06,f,Allegheny Center,1,22,42003562700,1,22,1,1-6,40.45031194,-80.00489781
+1111207871,COMPLETE STREETS,BELLEFIELD & FIFTH - SIGNAL UPGRADES,Engineering and Construction,65000,Planned,TS102,Signalized Intersection,2019,2019-02-06,f,North Oakland,8,4,42003982200,3,4,4,2-7,40.44647634,-79.95191089
+768789779,COMPLETE STREETS,CALIFORNIA & ANTRIM - SIGNAL UPGRADES,Engineering and Construction,155000,Planned,TS39,Signalized Intersection,2019,2019-02-06,f,Brighton Heights,1,27,42003270300,1,27,1,1-14,40.47526053,-80.03957248
+1919662181,COMPLETE STREETS,FORWARD & MURRAY - PEDESTRIAN UPGRADES,Engineering and Construction,295000,Planned,TS359,Signalized Intersection,2019,2019-02-06,f,Squirrel Hill South,5,14,42003141400,3,14,4,2-21,40.4296236,-79.92353314
+892110751,COMPLETE STREETS,FRANKSTOWN & EAST LIBERTY - SIGNAL UPGRADES,Engineering and Construction,265000,Planned,TS151,Signalized Intersection,2019,2019-02-06,f,Larimer,9,12,42003120800,2,12,5,3-10,40.46080647,-79.91578885
+661532843,COMPLETE STREETS,LIBERTY & MAIN - INTERSECTION UPGRADES,Engineering and Construction,400000,Planned,TS129,Signalized Intersection,2019,2019-02-06,f,Bloomfield,7,9,42003090300,2,9,5,3-6,40.46373074,-79.95289566
+67539409,COMPLETE STREETS,LIBERTY & MILLVALE - SIGNAL UPGRADES,Engineering and Construction,155000,Planned,TS423,Signalized Intersection,2019,2019-02-06,f,Bloomfield,7,8,42003080400,2,8,5,3-6,40.46000363,-79.94596272
+732971982,COMPLETE STREETS,NORTHUMBERLAND & SHADY - INTERSECTION RECONSTRUCTION,Engineering and Construction,140000,Planned,TS482,Signalized Intersection,2019,2019-02-06,f,Squirrel Hill North,8,14,42003140300,3,14,4,2-18,40.44181501,-79.91990233
+779587792,COMPLETE STREETS,SARAH & 20TH - SIGNAL UPGRADES,Engineering and Construction,155000,Planned,TS516,Signalized Intersection,2019,2019-02-06,f,South Side Flats,3,17,42003170200,3,17,3,4-24,40.42766874,-79.97772821
+1299508675,STEP REPAIR AND REPLACEMENT,GREENFIELD AVE - STEP UPGRADES,Engineering and Construction,135000,Planned,Greenfield Ave at Magee Playground to Blanton St,Step,2019,2019-02-06,f,Greenfield,5,15,42003151700,3,15,4,2-12,40.42435726,-79.93793658
+1539527490,STEP REPAIR AND REPLACEMENT,HALPIN ST - STEP UPGRADES,Engineering and Construction,300000,Planned,Halpin St from Maple Terrace to Belonda St,Step,2019,2019-02-06,f,Mount Washington,2,19,42003191400,5,19,3,4-27,40.42954779,-80.01093069
+976768437,STEP REPAIR AND REPLACEMENT,JAMES ST - STEP UPGRADES,Engineering and Construction,200000,Planned,James St to Fountain St,Step,2019,2019-02-06,f,Central Northside,6,25,42003220600,1,25,1,1-6,40.45851691,-80.00227922
+509160176,BIKE SHARE,Education and Outreach,Engineering and Construction,1500,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+563830573,BIKE SHARE,Shipping,Engineering and Construction,9000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+279361630,BIKE SHARE,Administration,Engineering and Construction,10000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+850241936,BIKE SHARE,Import Duties and Customs,Engineering and Construction,18000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+959725113,BIKE SHARE,Education and Outreach,Engineering and Construction,48500,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+2138074579,BIKE SHARE,"Planning, Engineering, and Siting",Engineering and Construction,50000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+640076703,BIKE SHARE,Docks (500),Engineering and Construction,125000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1176645534,BIKE SHARE,Kiosks (25),Engineering and Construction,187500,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1591414121,BIKE SHARE,Bikes (250),Engineering and Construction,325000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+209060648,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",Structures Engineering,Engineering and Construction,150000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+368069498,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",Infrastructure Engineering,Engineering and Construction,200000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1215759115,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",CM/CI Services,Engineering and Construction,200000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+491681199,FLEX BEAM GUIDERAILS AND FENCING,Flex Beam Guiderails,Engineering and Construction,50000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1936205750,PENNDOT LOCAL SHARE (TIP),PennDOT ADA Ramp Reconstruction,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+829194288,PENNDOT LOCAL SHARE (TIP),PennDOT Investments in City Infrastructure,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1794700793,RAMP AND PUBLIC SIDEWALK,City Sidewalks,Engineering and Construction,50000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+337260139,RAMP AND PUBLIC SIDEWALK,ADA Curb Ramps and Public Sidewalks,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+694053351,STEP REPAIR AND REPLACEMENT,City Accelerator Step Assessment,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+2034448920,STEP REPAIR AND REPLACEMENT,City Accelerator Step Assessment,Engineering and Construction,100000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1449414446,STREET RESURFACING,Bike and Pedestrian Thermoplastic Paint,Engineering and Construction,200000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+865803673,STREET RESURFACING,Bituminous,Engineering and Construction,247800,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+587640297,STREET RESURFACING,Concrete,Engineering and Construction,250000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1558979641,STREET RESURFACING,Bituminous,Engineering and Construction,270000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1999360877,STREET RESURFACING,Pavement Markings,Engineering and Construction,465000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+92641545,STREET RESURFACING,Crack Sealing,Engineering and Construction,465000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1805286209,STREET RESURFACING,Ramps,Engineering and Construction,472170,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1902507792,STREET RESURFACING,Ramps,Engineering and Construction,477830,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1730837914,STREET RESURFACING,Pothole Materials,Engineering and Construction,620000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1519237168,STREET RESURFACING,Brick/Block,Engineering and Construction,750000,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+260852692,STREET RESURFACING,Bituminous,Engineering and Construction,10516025,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1817977216,TRAIL DEVELOPMENT,Trolley Trail Phase 2,Engineering and Construction,61935.28,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+1857056005,TRAIL DEVELOPMENT,Trolley Trail Phase 2,Engineering and Construction,247741.12,Planned,,Non-Asset,2017,2017-02-08,,,,,,,,,,0,0
+768422847,ADVANCED TRANSPORTATION AND CONGESTION MANAGEMENT TECHNOLOGIES DEVELOPMENT (ATCMTD),ATCMTD - Design Services,Engineering and Construction,2570726,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+586449757,BIKE SHARE,"Phase II - Planning, Engineering, and Siting",Engineering and Construction,66500,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+414683709,BRIDGE REPAIRS,Deck Preservations,Engineering and Construction,200000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1483286209,BRIDGE REPAIRS,Expansion Seal Replacement,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+28401941,BRIDGE REPAIRS,Inspection/Repair of Small City Spans (<20'),Engineering and Construction,200000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+2101923885,BRIDGE REPAIRS,Scupper Cleaning,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1001685265,COMPLETE STREETS,Baum-Centre Crossings,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,Bloomfield,7,8,42003080400,2,8,5,3-1,40.4555272,-79.94157817
+1410754824,COMPLETE STREETS,Brighton Road - Bike Infrastructure,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1434277116,COMPLETE STREETS,Ellsworth Slow Street,Engineering and Construction,250000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+630933327,COMPLETE STREETS,Grandview Avenue Traffic Calming,Engineering and Construction,50000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1388920088,COMPLETE STREETS,Neighborhood Traffic Calming Response,Engineering and Construction,360000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+19010505,COMPLETE STREETS,Parkfield Street Traffic Calming,Engineering and Construction,20000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+417961382,COMPLETE STREETS,Prospect Drive Traffic Calming,Engineering and Construction,20000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+997812955,COMPLETE STREETS,Saline Street Traffic Calming,Engineering and Construction,50000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+38649428,COMPLETE STREETS,South Dallas Avenue Road Diet,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+781551224,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",Construction Management/Construction Inspection,Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1349042598,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",Vision Zero Study,Engineering and Construction,300000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1432606856,DISTRICT 7 MOBILITY TRUST FUND,"Pedestrian Improvements, Mobility, and Infrastructure",Engineering and Construction,100000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1794716527,EAST CARSON STREET (PENNDOT),East Carson Street - Construction,Engineering and Construction,1500000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1570344567,FLEX BEAM GUIDERAILS AND FENCING,Contingency,Engineering and Construction,75000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+2004454999,FLOOD CONTROL PROJECTS,Stormwater Improvements in Carrick,Engineering and Construction,350000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1528881208,FLOOD CONTROL PROJECTS,Streets Run - Redesign,Engineering and Construction,2500000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+2122448353,FOUR MILE RUN,Four Mile Run - Design,Engineering and Construction,4000000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+255077186,LIBERTY AVENUE (HSIP),Liberty Avenue (HSIP) - Preliminary Design,Engineering and Construction,300000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+143087396,"PENN AVENUE RECONSTRUCTION, PHASE II (TIP)","Penn Avenue Reconstruction, Phase II - Final Design",Engineering and Construction,16000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+785804382,"PENN AVENUE RECONSTRUCTION, PHASE II (TIP)","Penn Avenue Reconstruction, Phase II - Utility Clearance",Engineering and Construction,50000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+9340870,RAMP AND PUBLIC SIDEWALK,ADA Compliant Ramps,Engineering and Construction,150000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+512005925,RAMP AND PUBLIC SIDEWALK,Critical Sidewalk Gaps,Engineering and Construction,250000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+19932800,RAMP AND PUBLIC SIDEWALK,Public Sidewalks,Engineering and Construction,150000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+421416203,SMALLMAN STREET RECONSTRUCTION,Smallman Street Reconstruction,Engineering and Construction,11900000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+974643338,STEP REPAIR AND REPLACEMENT,Repairs to City Steps,Engineering and Construction,360000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+2111221477,STREET RESURFACING,Grant Street - Brick Repairs,Engineering and Construction,950000,Planned,,Non-Asset,2018,2018-02-12,,Central Business District,6,1,42003020100,6,1,2,1-4,40.43842212,-79.99746054
+641977636,STREETSCAPE AND INTERSECTION RECONSTRUCTION,Liberty Avenue Complete Streets Upgrades with Crosswalks,Engineering and Construction,50000,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+339801633,STREETSCAPE AND INTERSECTION RECONSTRUCTION,South 21st Street Complete Green Streets,Engineering and Construction,4982045,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+2022935395,TRAIL DEVELOPMENT,Trolley Trail Phase 2,Engineering and Construction,350863.2,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+275544547,STREET RESURFACING,Street Resurfacing City Wide,Engineering and Construction,15065798,Planned,,Non-Asset,2018,2018-02-12,,,,,,,,,,0,0
+1084471235,ADVANCED TRANSPORTATION AND CONGESTION MANAGEMENT TECHNOLOGIES DEVELOPMENT (ATCMTD),ATCMTD - SMART SIGNALS,Engineering and Construction,1000000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+417623467,ADVANCED TRANSPORTATION AND CONGESTION MANAGEMENT TECHNOLOGIES DEVELOPMENT (ATCMTD),ATCMTD - SMART SIGNALS,Engineering and Construction,10306977.5,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+914784172,BRIDGE UPGRADES,CONTINGENCY - BRIDGE UPGRADES,Engineering and Construction,500000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1182119728,BUS RAPID TRANSIT,PHASE I STREET AND SIGNAL IMPROVEMENTS,Engineering and Construction,1500000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+2124485771,BUS RAPID TRANSIT,PHASE I STREET AND SIGNAL IMPROVEMENTS,Engineering and Construction,3000000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+316638988,COMPLETE STREETS,GREEN LIGHT GO - PEDESTRIAN INFRASTRUCTURE UPGRADES,Engineering and Construction,200000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1878656519,COMPLETE STREETS,GREEN LIGHT GO - PEDESTRIAN INFRASTRUCTURE UPGRADES,Engineering and Construction,527500,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+517149896,COMPLETE STREETS,LOCAL AUTOMATED RED LIGHT ENFORCEMENT PLANNING,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1579553500,COMPLETE STREETS,NEIGHBORHOOD TRAFFIC CALMING,Engineering and Construction,190000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+625732325,COMPLETE STREETS,NEIGHBORHOOD TRAFFIC CALMING,Engineering and Construction,300000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1338612073,COMPLETE STREETS,ONEPGH  INTEGRATED TRAFFIC SIGNAL DEVELOPMENT PLAN,Engineering and Construction,600000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1665485170,COMPLETE STREETS,SIGNAL PROJECT DESIGN SERVICES,Engineering and Construction,250000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+997048169,COMPLETE STREETS,VISION ZERO - HIGH CRASH CORRIDOR REMEDIATION,Engineering and Construction,150000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+548255638,COMPLETE STREETS,VISION ZERO - HIGH CRASH CORRIDOR REMEDIATION,Engineering and Construction,200000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+521960907,COMPLETE STREETS,VISION ZERO - INTERSECTION SAFETY REMEDIATION,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+232367219,COMPLETE STREETS,VISION ZERO - INTERSECTION SAFETY REMEDIATION,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+577372230,"DESIGN, CONSTRUCTION, AND INSPECTION SERVICES",LARGE PROJECT CONSTRUCTION MANAGEMENT/CONSTRUCTION INSPECTION,Engineering and Construction,450000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1488442556,FLEX BEAM GUARDRAILS AND FENCING,FLEX BEAM GUARDRAIL REPLACEMENT,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+194595614,LED STREETLIGHT UPGRADE,CITYWIDE LED LIGHTING UPGRADE,Engineering and Construction,14000000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1473608663,RAMP AND PUBLIC SIDEWALK,CRITICAL SIDEWALK GAPS,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+774970860,RAMP AND PUBLIC SIDEWALK,CRITICAL SIDEWALK GAPS,Engineering and Construction,300000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1826348566,RAMP AND PUBLIC SIDEWALK,PUBLIC SIDEWALK UPGRADES,Engineering and Construction,200000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1343990211,STEP REPAIR AND REPLACEMENT,UPGRADES TO CITY STEPS,Engineering and Construction,100000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+702343268,STREET RESURFACING,BITUMINOUS PAVING PROGRAM,Engineering and Construction,14570890,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+1121099476,STREET RESURFACING,"CONCRETE, BRICK, AND BLOCKSTONE",Engineering and Construction,4000000,Planned,,Non-Asset,2019,2019-03-20,,,,,,,,,,0,0
+780381812,FLOOD CONTROL PROJECTS,SAW MILL RUN - REMEDIATION,Engineering and Construction,300000,Planned,,Non-Asset,2019,2019-03-22,,Duquesne Heights,2,20,42003191400,5,20,3,4-28,40.425479,-80.02091545
+614861580,FLOOD CONTROL PROJECTS,STREETS RUN - REMEDIATION,Engineering and Construction,500000,Planned,,Non-Asset,2019,2019-03-22,,Hays,5,31,42003562900,3,31,4,4-20,40.3828662,-79.93289477
+369009648,FOUR MILE RUN,FOUR MILE RUN,Engineering and Construction,532345,Planned,,Non-Asset,2019,2019-03-22,,Greenfield,5,15,42003151600,3,15,4,2-12,40.42749834,-79.94729574
+531315818,FOUR MILE RUN,FOUR MILE RUN,Engineering and Construction,2500000,Planned,,Non-Asset,2019,2019-03-22,,Greenfield,5,15,42003151600,3,15,4,2-12,40.42747384,-79.9474674
+405346252,FOUR MILE RUN,FOUR MILE RUN,Engineering and Construction,7467655,Planned,,Non-Asset,2019,2019-03-22,,Greenfield,5,15,42003151600,3,15,4,2-12,40.4274923,-79.94745254
+740490327,TRAIL DEVELOPMENT,JUNCTION HOLLOW TRAIL EXTENSION,Engineering and Construction,50000,Planned,,Non-Asset,2019,2019-03-22,,South Oakland,3,4,42003040900,3,4,4,2-12,40.42982303,-79.95013055
+1120100712,SLOPE FAILURE REMEDIATION,FALLOWFIELD AVE - SLOPE IMPROVEMENTS,Engineering and Construction,1000000,Planned,,Non-Asset,2019,2019-03-22,,Beechview,4,19,42003191600,5,19,6,4-28,40.41116896,-80.02376746
+1829704652,TRAIL DEVELOPMENT,WASHINGTON BOULEVARD TRAIL,Engineering and Construction,75000,Planned,,Non-Asset,2019,2019-03-22,,Lincoln-Lemington-Belmar,7,12,42003981800,2,12,5,3-15,40.48340495,-79.90775223
+1797590590,SLOPE FAILURE REMEDIATION,UPPER GREENLEAF - SLOPE IMPROVEMENTS,Engineering and Construction,750000,Planned,,Non-Asset,2019,2019-03-22,,Duquesne Heights,2,19,42003191100,5,19,3,4-1,40.44261919,-80.02867486
+113484596,TRAIL DEVELOPMENT,MONITOR ST TO FORWARD AVE TRAIL,Engineering and Construction,50000,Planned,,Non-Asset,2019,2019-03-22,,Squirrel Hill South,5,14,42003141400,3,14,4,2-15,40.42627749,-79.9262585
