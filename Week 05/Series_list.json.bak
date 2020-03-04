@@ -1,0 +1,146 @@
+[
+   {
+      "Error": "ID: 70325 not found"
+   },
+   {
+      "Error": "ID: 70326 not found"
+   },
+   {
+      "data": {
+         "id": 70327,
+         "seriesId": "10",
+         "seriesName": "Buffy the Vampire Slayer",
+         "aliases": [],
+         "season": "7",
+         "poster": "posters/70327-1.jpg",
+         "banner": "graphical/70327-g11.jpg",
+         "fanart": "fanart/original/70327-3.jpg",
+         "status": "Ended",
+         "firstAired": "1997-03-10",
+         "network": "The WB",
+         "networkId": "269",
+         "runtime": "45",
+         "language": "en",
+         "genre": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Horror"
+         ],
+         "overview": "In every generation there is a Chosen One. She alone will stand against the vampires, the demons and the forces of darkness. She is the Slayer.\r\n\r\nBuffy Summers is The Chosen One, the one girl in all the world with the strength and skill to fight the vampires. With the help of her close friends, Willow, Xander, and her Watcher Giles she balances slaying, family, friendships, and relationships.",
+         "lastUpdated": 1582909447,
+         "airsDayOfWeek": "",
+         "airsTime": "",
+         "rating": "TV-PG",
+         "imdbId": "tt0118276",
+         "zap2itId": "EP00213110",
+         "added": "2008-02-04 00:00:00",
+         "addedBy": 1,
+         "siteRating": 9,
+         "siteRatingCount": 4718,
+         "slug": "buffy-the-vampire-slayer"
+      }
+   },
+   {
+      "data": {
+         "id": 70328,
+         "seriesId": "",
+         "seriesName": "The Young and the Restless",
+         "aliases": [],
+         "season": "47",
+         "poster": "posters/70328-2.jpg",
+         "banner": "graphical/70328-g.jpg",
+         "fanart": "fanart/original/70328-1.jpg",
+         "status": "Continuing",
+         "firstAired": "1997-10-08",
+         "network": "CBS",
+         "networkId": "57",
+         "runtime": "45",
+         "language": "en",
+         "genre": [
+            "Drama",
+            "Soap"
+         ],
+         "overview": "Set in Genoa City, Y&R is the long-running soap that tells the story of the struggle behind the business- and sex-savvy Abbott and Newman clans.",
+         "lastUpdated": 1583262865,
+         "airsDayOfWeek": "Weekdays",
+         "airsTime": "12:30 PM",
+         "rating": "TV-14",
+         "imdbId": "tt0069658",
+         "zap2itId": "EP00004422",
+         "added": "2008-02-04 00:00:00",
+         "addedBy": 1,
+         "siteRating": 6.8,
+         "siteRatingCount": 221,
+         "slug": "the-young-and-the-restless"
+      }
+   },
+   {
+      "data": {
+         "id": 70329,
+         "seriesId": "1000",
+         "seriesName": "My Wife and Kids",
+         "aliases": [],
+         "season": "5",
+         "poster": "posters/70329-2.jpg",
+         "banner": "graphical/70329-g.jpg",
+         "fanart": "fanart/original/70329-2.jpg",
+         "status": "Ended",
+         "firstAired": "2001-03-28",
+         "network": "ABC (US)",
+         "networkId": "5",
+         "runtime": "25",
+         "language": "en",
+         "genre": [
+            "Comedy"
+         ],
+         "overview": "Michael Kyle longs for a traditional life, but his day-trader wife Janet, gangsta rap-worshipping son Michael Jr., and brooding daughters Claire and Kady make his dream just that ... a dream.",
+         "lastUpdated": 1581767035,
+         "airsDayOfWeek": "Tuesday",
+         "airsTime": "8:00 PM",
+         "rating": null,
+         "imdbId": "tt0273855",
+         "zap2itId": "EP00425822",
+         "added": "2008-02-04 00:00:00",
+         "addedBy": 1,
+         "siteRating": 7.7,
+         "siteRatingCount": 818,
+         "slug": "my-wife-and-kids"
+      }
+   },
+   {
+      "data": {
+         "id": 70330,
+         "seriesId": "10000",
+         "seriesName": "The Summer Smothers Brothers Show",
+         "aliases": [],
+         "season": "1",
+         "poster": "posters/70330-1.jpg",
+         "banner": "graphical/70330-g.jpg",
+         "fanart": "fanart/original/70330-1.jpg",
+         "status": "Ended",
+         "firstAired": "1968-06-23",
+         "network": "CBS",
+         "networkId": "57",
+         "runtime": "45",
+         "language": "en",
+         "genre": [
+            "Comedy"
+         ],
+         "overview": null,
+         "lastUpdated": 1573797600,
+         "airsDayOfWeek": "Sunday",
+         "airsTime": "9:00 PM",
+         "rating": null,
+         "imdbId": "",
+         "zap2itId": "",
+         "added": "2008-02-04 00:00:00",
+         "addedBy": 1,
+         "siteRating": 0,
+         "siteRatingCount": 0,
+         "slug": "the-summer-smothers-brothers-show"
+      }
+   }
+]
