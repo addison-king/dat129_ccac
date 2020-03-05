@@ -140,7 +140,7 @@ def _analyze_data():
     data_file.close()
     print('======================================')
     print('======================================\n')
-    print("Of the", overall_length, "series already scraped,")
+    print("Of the", overall_length, "series already scrapped,")
     print("there are", count, "found shows still airing.")
 
 def _user_analyze_choice():
@@ -155,9 +155,11 @@ def _get_scraping_length():
     print("CAUTION :: 1,000 queries takes over 3 mins.")
     user_choice = int(input("Number of series to scrape: "))
     if user_choice > 1000:
-        user_choice = 1000
-        print("That is too many. I've trimmed it down to 1,000 queries.")
-        input("Press ENTER to continue.")
+        password = input("Enter bypass password: ")
+        if password != "1024":
+            user_choice = 1000
+            print("That is too many. I've trimmed it down to 1,000 queries.")
+            input("Press ENTER to continue.")
     return user_choice
 
 if __name__ == "__main__":
