@@ -23,13 +23,13 @@
 	- cursor.execute("SELECT * FROM table_name")
 	- cursor.execute("SELECT header_1, header_2 FROM table_name")
 - Select modifiers
-	WHERE
+	- WHERE
 		- cursor.execute("SELECT * FROM table_name WHERE clause_here")
-	GROUP BY
+	- GROUP BY
 		- cursor.execute("SELECT * FROM table_name GROUP BY clause_here")
-	ORDER BY
+	- ORDER BY
 		- cursor.execute("SELECT * FROM table_name ORDER BY clause_here")
-	COUNT()
+	- COUNT()
 		- cursor.execute("SELECT header_1, COUNT(header_2) FROM table_name")
 
 ## More Info / Sources:
