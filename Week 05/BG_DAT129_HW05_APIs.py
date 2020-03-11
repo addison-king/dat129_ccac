@@ -12,18 +12,21 @@ import requests
 import json
 from os import path
 from json.decoder import JSONDecodeError
+import pandas as pd
 
 def main():
     user_choice = _user_greeting_choice()
     if user_choice == 1:
         auth_headers = _get_token()
         _scrape_series(auth_headers)
-    else:
+    elif user_choice == 2:
         _analyze_data()
+    elif user_choice == 3:
+        _json_manipulation()
 
 def _user_greeting_choice():
     print("Would you like to do webscraping or calculations?")
-    print("1: Webscraping\n2: Calculations")
+    print("1: Webscraping\n2: Calculations\n3: Conversion (json to csv)")
     user_choice = int(input("Choice: "))
     print('\n\n')
     return user_choice
@@ -135,7 +138,9 @@ def _analyze_data():
                     count += 1
                     print('______________________________________')
                     print('Series Name: ',  main_dict[key1]['seriesName'])
+                    print('id: ', main_dict[key1]['id'])
                     print('Status: ', main_dict[key1]['status'])
+
 
     data_file.close()
     print('======================================')
@@ -161,6 +166,26 @@ def _get_scraping_length():
             print("That is too many. I've trimmed it down to 1,000 queries.")
             input("Press ENTER to continue.")
     return user_choice
+
+def _json_to_csv():
+    df = pd.read_json(r'C:\Users\BKG\OneDrive\Desktop\GitHub\dat129_ccac\Week 05\TEMP_data.json')
+    df.to_csv(r'C:\Users\BKG\OneDrive\Desktop\GitHub\dat129_ccac\Week 05\Series_list.csv', index = None)
+
+def _json_manipulation():
+    building = []
+    with open('Series_list.json', 'r') as file_object:
+        data = json.load(file_object)
+
+    for row in data:
+        for key in row:
+            if key == 'data':
+                building.append(row['data'])
+
+    with open('TEMP_data.json', 'w') as out_file:
+        json.dump(building, out_file, indent=3)
+        input('built')
+
+    _json_to_csv()
 
 if __name__ == "__main__":
     main()
