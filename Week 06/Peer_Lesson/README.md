@@ -1,6 +1,7 @@
 # Database with Python
 
 ## Basic Commands (Python):
+### Note: you can take the cursor command inside the () and use it in command line sqlite
 - Create a connection to a database
 	- connection = sqlite3.connect('your_database.db')
 - Create a cursor
@@ -31,6 +32,10 @@
 		- cursor.execute("SELECT * FROM table_name ORDER BY clause_here")
 	- COUNT()
 		- cursor.execute("SELECT header_1, COUNT(header_2) FROM table_name")
+
+## Challenge:
+	- Take your data from an API and put it into a database
+	- Use database commands to give you answers about your data
 
 ## More Info / Sources:
 
