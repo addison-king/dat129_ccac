@@ -2,8 +2,7 @@
 Brandyn Gilbert
     Wed Mar 25 19:23:07 2020
     Python 2 - DAT-129 - Spring 2020
-    Homework #####
-    TITLE OF HOMEWORK
+    Lecture Notes
 """
 #PLAN
 
