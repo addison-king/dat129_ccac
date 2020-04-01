@@ -2,7 +2,7 @@
 
 ## Authors note: Please look at file "BG_DAT129_HW08_GR_SK.py" first. This file analyzes Stephen King on the goodreads website.
 * This program searches the goodreads website for the term "Stephen King." It will also parse through pages of search results (i.e. page 1, page 2, etc).
-* Once the html is BeautifulSouped, it finds all of the tags containing every search entry. These entries are then broken further .
+* Once the html is BeautifulSouped, it finds all of the tags containing every search result. These results are then broken down further into usable pieces.
 * RESULTS: Total-averaged average rating, total books, total votes for Stephen King.
 
 ## Authors note: The file "BG_DAT129_HW08_HTML_scraping.py" is an expansion project from the lecture.
