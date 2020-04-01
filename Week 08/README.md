@@ -1,6 +1,7 @@
 # Week 08 - Web Scraping
 
 ### Authors note: Please look at file "BG_DAT129_HW08_GR_SK.py" first. This file analyzes Stephen King on the goodreads website.
+### Authors note: The file "BG_DAT129_HW08_HTML_scraping.py" is an expansion project from the lecture.
 
 ---
 
