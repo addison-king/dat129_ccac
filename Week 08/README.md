@@ -2,6 +2,8 @@
 
 ### Authors note: Please look at file "BG_DAT129_HW08_GR_SK.py" first. This file analyzes Stephen King on the goodreads website.
 
+---
+---
 ### program objective
 * Create a program that uses the urllib and BeautifulSoup to grab HTML code from a public source, parses that source into meaningful bits of data, and spits those meaningufl bits of data into some form that could be transfered into anothre tool, such as a CSV for slurping up into a Database, a JSON file for use in the web, etc.
 
