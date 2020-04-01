@@ -29,7 +29,7 @@ def _analyze_html(term):
     title_length = 0
     title_count = 0
     i = 1
-    while i < 11:
+    while i < 6:
         print('\tPage:', i, '...', end='')
         url = getSearchURL(term, i)
         pageText = getPageText(url)
