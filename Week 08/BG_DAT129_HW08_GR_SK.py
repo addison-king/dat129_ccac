@@ -21,13 +21,16 @@ def _get_Page_Text(url):
 
     return response.read()
 
+
+
+
 def main():
     page_number = 1
     average = 0
     votes = 0
     counter = 0
 
-    while page_number < 6:
+    while page_number < 2:
         author = 'Stephen-King'
         url = _get_Search_URL(author, page_number)
 

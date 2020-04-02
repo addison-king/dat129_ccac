@@ -6,7 +6,7 @@
 * RESULTS: Total-averaged average rating, total books, total votes for Stephen King.
 
 ---
-**HTML Source: (Underlined text is what we want to extract. Highlighted text is the first filter tag using BeautifulSoup)**
+**HTML Source: (Underlined text is what we want to extract. Highlighted text is the first filter tag used by BeautifulSoup)**
 ![HTML Source](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2008/Not%20Quite%20Working/HTML_Example_Code.PNG)
 ---
 **Output text:**
