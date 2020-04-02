@@ -5,6 +5,7 @@
 * Once the html is BeautifulSouped, it finds all of the tags containing every search result. These results are then broken down further into usable pieces.
 * RESULTS: Total-averaged average rating, total books, total votes for Stephen King.
 
+HTML Source: (Underlined text is what we want to extract. Highlighted text is the first filter tag using BeautifulSoup)
 ![HTML Source](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2008/Not%20Quite%20Working/HTML_Example_Code.PNG)
 
 
