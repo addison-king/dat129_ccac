@@ -62,12 +62,14 @@ def main():
         page_number -=- 1
 
     votes = int(votes)
+    print('\n\n')
     print('In total, across', counter, 'books Stephen King has: ')
     print('\tTotal votes:    ', f'{votes:,}')
 
     # print('Total average:  ', average)
     real_avg = str(round(average / counter, 2))
     print('\tAverage rating: ', real_avg)
+    print('\n\n')
 
 
 if __name__ == "__main__":
