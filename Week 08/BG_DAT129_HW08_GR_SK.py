@@ -2,8 +2,8 @@
 Brandyn Gilbert
     Wed Apr  1 11:16:29 2020
     Python 2 - DAT-129 - Spring 2020
-    Homework #####
-    TITLE OF HOMEWORK
+    Homework 8
+    HTML Scraping
 """
 #PLAN
 import urllib
