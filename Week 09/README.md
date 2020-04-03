@@ -17,20 +17,20 @@
 
 ## Code Images
 ### Search page HTML
-[Search Page HTML](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_search_page.PNG)
+![Search Page HTML](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_search_page.PNG)
 
 ### Average Rating HTML
-[avg rating](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_avg_rating.PNG)
+![avg rating](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_avg_rating.PNG)
 
 ### Number of Ratings & Number of Reviews
-[ratings and reviews](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_rating_review.PNG)
+![ratings and reviews](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_rating_review.PNG)
 
 ### Number of Pages
-[book page count](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_page_count.PNG)
+![book page count](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_page_count.PNG)
 
 ### Book Title
-[book title](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_title.PNG)
+![book title](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/HTML_title.PNG)
 
 
 ### Console printout
-[console output](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/Console_print.PNG)
+![console output](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/Console_print.PNG)
