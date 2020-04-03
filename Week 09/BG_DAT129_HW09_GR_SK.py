@@ -77,9 +77,10 @@ def _extract_title(page_text):
     print('\'', title, '\'', sep='')
     return title
 
+
 def main():
     '''
-    The MAIN function calls many other smaller functions.
+     MAIN function calls many other smaller functions.
         1.  Get the search url (you can change the author name)
         2.  Grab the page text from the website
         3.  Convert the HTML using beautifulsoup
