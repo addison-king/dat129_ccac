@@ -33,4 +33,4 @@
 
 
 ### Console printout
-[console output]()
+[console output](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/Console_print.PNG)
