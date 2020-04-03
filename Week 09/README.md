@@ -10,7 +10,7 @@
 3. Describe your project in a readme.md file and include a screen shot of both your output and the HTML your BeautifulSoup scrapes. 
 4. Push your completed project to your github and insert link in our master tracker 
 
-## Project Expansion
+## Project Embellishment 
 1. Break the code into smaller, more modular parts
 2. Have the code navigate to a page from the original website page
 3. Extract data from the secondary page
