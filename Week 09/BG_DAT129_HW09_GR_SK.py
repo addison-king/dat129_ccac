@@ -14,12 +14,10 @@ Brandyn Gilbert
 # ????
 # Profit
 
-
 import urllib
 from bs4 import BeautifulSoup
-import re
 
-def _get_Search_URL(term, page_number):
+def _get_search_url(term, page_number):
     url = 'https://www.goodreads.com/search?page='
     url = url + '%d&qid=MpPJ3DuY5H&query=%s&tab=books' % (page_number, str(term))
     return url
@@ -29,7 +27,7 @@ def _get_book_page_url(tag):
     href_link = 'https://www.goodreads.com' + link['href']
     return href_link
 
-def _get_Page_Text(url):
+def _get_page_text(url):
     req = urllib.request.Request(url)
     response = urllib.request.urlopen(req)
     return response.read()
@@ -48,7 +46,7 @@ def _extract_rating_count(page_text):
     review_tag = review_tag.replace('·', '')
     reviews = review_tag.split()
 
-    print('Number of rating votes:', reviews[0])
+    print('Number of votes:', reviews[0])
     return reviews[0]
 
 def _extract_review_count(page_text):
@@ -76,23 +74,18 @@ def _extract_title(page_text):
     soup = BeautifulSoup(page_text, 'html.parser')
     title = soup.find('h1', 'gr-h1 gr-h1--serif').text
     title = title.strip()
-    print('\'',title,'\'', sep='')
+    print('\'', title, '\'', sep='')
     return title
-
-
 
 def main():
     page_number = 1
-    average = 0
-    votes = 0
-    counter = 0
 
     while page_number < 2:
         author = 'Stephen-King'
-        url = _get_Search_URL(author, page_number)
+        url = _get_search_url(author, page_number)
 
-        pageText = _get_Page_Text(url)
-        soup = BeautifulSoup(pageText, 'html.parser')
+        page_text = _get_page_text(url)
+        soup = BeautifulSoup(page_text, 'html.parser')
 
         parent_tag = soup.find_all('tr', {'itemtype':'http://schema.org/Book'})
         for tag in parent_tag:
@@ -102,10 +95,7 @@ def main():
                 href_link = _get_book_page_url(tag)
                 print('\n', href_link)
 
-                page_text_2 = _get_Page_Text(href_link)
-                # soup2 = BeautifulSoup(page_text_2, 'html.parser')
-                # parent_tag2 = soup2.find_all('div', 'uitext stacked')
-                #print(parent_tag2)
+                page_text_2 = _get_page_text(href_link)
                 _extract_title(page_text_2)
                 page_count = _extract_page_count(page_text_2)
                 print('Number of pages:', page_count)
@@ -113,38 +103,7 @@ def main():
                 _extract_rating_count(page_text_2)
                 _extract_review_count(page_text_2)
 
-
-
-
-
-
-        page_number -=- 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        page_number += 1
 
 if __name__ == "__main__":
     main()
