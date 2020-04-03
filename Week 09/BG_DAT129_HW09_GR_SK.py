@@ -78,6 +78,27 @@ def _extract_title(page_text):
     return title
 
 def main():
+    '''
+    The MAIN function calls many other smaller functions.
+        1.  Get the search url (you can change the author name)
+        2.  Grab the page text from the website
+        3.  Convert the HTML using beautifulsoup
+        4.  Find the author name, make sure it matches our author
+        5.  Get the url of the first resulting book from the search
+        6.  Grab the page text of the specific book
+        7.  Extract the title from the page, print it
+        8.  Extract the number of pages the book has, print it
+        9.  Extract the average rating of the book, print it
+        10. Extract the number of ratings the book has, print it
+        11. Extract the number of reviews the book has, print it
+        12. Advance the search result page by one
+        13. Return to step 1, repeat until top WHILE loop is satisfied
+
+    Returns
+    -------
+    None.
+
+    '''
     page_number = 1
 
     while page_number < 2:
@@ -93,7 +114,7 @@ def main():
             if author.lower() == 'stephen king':
 
                 href_link = _get_book_page_url(tag)
-                print('\n', href_link)
+                print('\n', href_link, sep='')
 
                 page_text_2 = _get_page_text(href_link)
                 _extract_title(page_text_2)
