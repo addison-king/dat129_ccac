@@ -18,7 +18,6 @@ import urllib
 from bs4 import BeautifulSoup
 
 def _get_search_url(term, page_number):
-
     url = 'https://www.goodreads.com/search?'
     url = url + 'page=%d' % (page_number)
     url = url + '&q=%s' % (str(term))
@@ -80,14 +79,14 @@ def _extract_title(page_text):
 
 def _print_author_list(author):
     for i in author:
-        print('\t',i, '. ', author[i], sep='')
+        print('\t', i, '. ', author[i], sep='')
     print()
 
 def _get_author():
     author = {1:'Stephen King', 2:'William Shakespeare', 3:'Jane Austen',
-          4:'Dean Koontz', 5:'Isaac Asimov', 6:'Agatha Christie',
-          7:'Dr. Seuss', 8:'Danielle Steel', 9:'Nora Roberts',
-          10:'Robert Ludlum'}
+              4:'Dean Koontz', 5:'Isaac Asimov', 6:'Agatha Christie',
+              7:'Dr. Seuss', 8:'Danielle Steel', 9:'Nora Roberts',
+              10:'Robert Ludlum'}
 
     print('Hello, please select an author to search for by entering the'
           +' corresponding number.')
@@ -96,7 +95,7 @@ def _get_author():
     while True:
         try:
             choice = int(input('Enter a number now: '))
-            if choice >= 1 and choice <= 10:
+            if 1 >= choice <= 10:
                 break
             else:
                 print('Not a valid number!')
