@@ -18,8 +18,11 @@ import urllib
 from bs4 import BeautifulSoup
 
 def _get_search_url(term, page_number):
-    url = 'https://www.goodreads.com/search?page='
-    url = url + '%d&qid=MpPJ3DuY5H&query=%s&tab=books' % (page_number, str(term))
+
+    url = 'https://www.goodreads.com/search?'
+    url = url + 'page=%d' % (page_number)
+    url = url + '&q=%s' % (str(term))
+    url = url + '&search_type=books&tab=books'
     return url
 
 def _get_book_page_url(tag):
@@ -45,7 +48,6 @@ def _extract_rating_count(page_text):
     review_tag = review_tag.replace(',', '')
     review_tag = review_tag.replace('·', '')
     reviews = review_tag.split()
-
     print('Number of votes:', reviews[0])
     return reviews[0]
 
@@ -55,7 +57,6 @@ def _extract_review_count(page_text):
     review_tag = review_tag.replace(',', '')
     review_tag = review_tag.replace('·', '')
     reviews = review_tag.split()
-
     print('Number of book reviews:', reviews[2])
     return reviews[2]
 
@@ -77,11 +78,40 @@ def _extract_title(page_text):
     print('\'', title, '\'', sep='')
     return title
 
+def _print_author_list(author):
+    for i in author:
+        print('\t',i, '. ', author[i], sep='')
+    print()
+
+def _get_author():
+    author = {1:'Stephen King', 2:'William Shakespeare', 3:'Jane Austen',
+          4:'Dean Koontz', 5:'Isaac Asimov', 6:'Agatha Christie',
+          7:'Dr. Seuss', 8:'Danielle Steel', 9:'Nora Roberts',
+          10:'Robert Ludlum'}
+
+    print('Hello, please select an author to search for by entering the'
+          +' corresponding number.')
+    _print_author_list(author)
+
+    while True:
+        try:
+            choice = int(input('Enter a number now: '))
+            if choice >= 1 and choice <= 10:
+                break
+            else:
+                print('Not a valid number!')
+        except ValueError:
+            print('\tThat is not a number!')
+
+    selection = author[choice]
+    selection = selection.replace(' ', '+')
+    return selection
+
 
 def main():
     '''
      MAIN function calls many other smaller functions.
-        1.  Get the search url (you can change the author name)
+        1.  Get the search url (you can choose the author name)
         2.  Grab the page text from the website
         3.  Convert the HTML using beautifulsoup
         4.  Find the author name, make sure it matches our author
@@ -101,10 +131,13 @@ def main():
 
     '''
     page_number = 1
+    author_search = _get_author()
+    author_name = author_search.replace('+', ' ')
+    author_name = author_name.lower()
 
     while page_number < 2:
-        author = 'Stephen-King'
-        url = _get_search_url(author, page_number)
+
+        url = _get_search_url(author_search, page_number)
 
         page_text = _get_page_text(url)
         soup = BeautifulSoup(page_text, 'html.parser')
@@ -112,8 +145,7 @@ def main():
         parent_tag = soup.find_all('tr', {'itemtype':'http://schema.org/Book'})
         for tag in parent_tag:
             author = tag.find('a', 'authorName').text
-            if author.lower() == 'stephen king':
-
+            if author.lower() == author_name:
                 href_link = _get_book_page_url(tag)
                 print('\n', href_link, sep='')
 
