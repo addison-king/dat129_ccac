@@ -15,6 +15,13 @@
 2. Have the code navigate to a page from the original website page
 3. Extract data from the secondary page
 
+## Project Description
+* The user selects an author from a list of 10 authors
+* The selected author is then used as a search query for the website goodreads.com
+* From the results, only the books that the selected author wrote, did write, are selected
+* Each selected book link is then opened
+* Data from each webpage extracted is: Title, Number of Pages, Avg Rating, Number of Ratings, Number of Reviews
+
 ## Code Images
 ### Search page HTML
 ![Search Page HTML](https://raw.githubusercontent.com/brandyn-gilbert/dat129_ccac/master/Week%2009/Pictures/HTML_search_page.PNG)
