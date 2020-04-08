@@ -16,6 +16,8 @@ Brandyn Gilbert
 
 import urllib
 from bs4 import BeautifulSoup
+import sqlite3
+from sqlite3 import Error
 
 def _get_search_url(term, page_number):
     url = 'https://www.goodreads.com/search?'
@@ -95,7 +97,7 @@ def _get_author():
     while True:
         try:
             choice = int(input('Enter a number now: '))
-            if 1 >= choice <= 10:
+            if choice >= 1 and choice <= 10:
                 break
             else:
                 print('Not a valid number!')
@@ -106,10 +108,43 @@ def _get_author():
     selection = selection.replace(' ', '+')
     return selection
 
+def _sql_creation():
+    try:
+        connection = sqlite3.connect('BG_DAT129_HW09_GR_SK.db')
+    except Error:
+        print(Error)
+
+    cursor_object = connection.cursor()
+
+    cursor_object.execute('DROP TABLE IF EXISTS Author_Data')
+
+    cursor_object.execute('CREATE table IF NOT EXISTS Author_Data(\
+                          id integer PRIMARY KEY, \
+                          Author text, \
+                          Title text, \
+                          Page_Count integer, \
+                          Average_Rating real, \
+                          Number_of_Ratings integer,\
+                          Number_of_Reviews integer, \
+                          URL_Link text)')
+    connection.close()
+
+def _sql_fill(data):
+    try:
+        connection = sqlite3.connect('BG_DAT129_HW09_GR_SK.db')
+    except Error:
+        print(Error)
+
+    cursor_object = connection.cursor()
+    cursor_object.executemany('INSERT INTO Author_Data VALUES(?, ?, ?, ?, ?, ?, ?, ?)', data)
+    connection.commit()
+    connection.close()
+
 
 def main():
-    '''
-     MAIN function calls many other smaller functions.
+    """
+     Call many other smaller functions.
+
         1.  Get the search url (you can choose the author name)
         2.  Grab the page text from the website
         3.  Convert the HTML using beautifulsoup
@@ -121,18 +156,23 @@ def main():
         9.  Extract the average rating of the book, print it
         10. Extract the number of ratings the book has, print it
         11. Extract the number of reviews the book has, print it
-        12. Advance the search result page by one
-        13. Return to step 1, repeat until top WHILE loop is satisfied
+        12. Send all the data to a database
+        13. Advance the search result page by one
+        14. Return to step 1, repeat until top WHILE loop is satisfied
 
     Returns
     -------
     None.
 
-    '''
+    """
+    counter_id = 0
     page_number = 1
     author_search = _get_author()
     author_name = author_search.replace('+', ' ')
     author_name = author_name.lower()
+    author_sql = author_name.title()
+
+    _sql_creation()
 
     while page_number < 2:
 
@@ -145,17 +185,21 @@ def main():
         for tag in parent_tag:
             author = tag.find('a', 'authorName').text
             if author.lower() == author_name:
+                counter_id += 1
                 href_link = _get_book_page_url(tag)
                 print('\n', href_link, sep='')
 
                 page_text_2 = _get_page_text(href_link)
-                _extract_title(page_text_2)
+                title = _extract_title(page_text_2)
                 page_count = _extract_page_count(page_text_2)
                 print('Number of pages:', page_count)
-                _extract_avg_rating(page_text_2)
-                _extract_rating_count(page_text_2)
-                _extract_review_count(page_text_2)
+                avg_rating = _extract_avg_rating(page_text_2)
+                rating_count = _extract_rating_count(page_text_2)
+                review_count = _extract_review_count(page_text_2)
 
+                data = [(counter_id, author_sql, title, page_count, avg_rating,
+                        rating_count, review_count, href_link)]
+                _sql_fill(data)
         page_number += 1
 
 if __name__ == "__main__":
