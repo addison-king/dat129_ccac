@@ -58,7 +58,7 @@ def _scrape_series(headers):
 
     while start_num < end_num:
         max_count += 1
-        print(start_num)
+        # print(start_num)
 
         url = 'https://api.thetvdb.com/series/'+ str(start_num)
 
@@ -66,20 +66,73 @@ def _scrape_series(headers):
         start_num += 1
 
         text = r.json()
+        print(text)
+        
+        input()
         text2 = text['data']
-        print(text2)
-        for i in text2:
-            print(i)
+      # convert the list of genres to a string  
+        genres = text2['genre']
+        genre_str = ', '.join(genres)
+        text2['genre'] = genre_str
+      # convert the list of aliases to a string
+        aliases = text2['aliases']
+        alias_str = ', '.join(aliases)
+        text2['aliases'] = alias_str
+
+
+        columns = ', '.join(str(x).replace('/', '_') for x in text2.keys())
+        values = ', '.join("'" + str(x).replace('/', '_') + "'" for x in text2.values())
+    
+   
+        res = tuple(list(text2.values()))
+        
+        # print(type(res))
+        # print(res)
+        
+        sql_table = '''CREATE table IF NOT EXISTS TV_Series (
+                    id text,
+                    seriesId text,
+                    seriesName text,
+                    aliases null,
+                    season integer,
+                    poster text,
+                    banner text,
+                    fanart text,
+                    status text,
+                    firstAired text,
+                    network text,
+                    networkId text,
+                    runtime text,
+                    language text,
+                    genre text,
+                    overview text,
+                    lastUpdated text,
+                    airsDayOfWeek text,
+                    airsTime text,
+                    rating text,
+                    imdbId text,
+                    zap2itId text,
+                    added text,
+                    addedBy text,
+                    siteRating text,
+                    siteRatingCount text,
+                    slug text
+                    )'''
+        
+        columns = ', '.join("'" + str(x).replace('/', '_') + "'" for x in text2.keys())
+        sql_insert = ''''INSERT INTO %s (%s) VALUES %s''' % ('TV_Series', columns, res)
+        # print(sql_insert)
+        
         connection = _db_connection()
         c = connection.cursor()
+        c.execute(sql_table)
+        print('created')
+        
+        c.execute('''INSERT INTO TV_Series VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''', res)
+        print('inserted')
+        connection.commit()
         connection.close()
-# =============================================================================
-#         print(text2['seriesName'])
-#         genres = text2['genre']
-#         for i in genres:
-#             print ('\t', i)
-#         print(text2['overview'])
-# =============================================================================
+
 
 
 
