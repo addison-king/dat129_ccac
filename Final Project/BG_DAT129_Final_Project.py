@@ -127,7 +127,7 @@ def _scrape_series(headers):
     # first_series_id = 70326
     # start_num = first_series_id
     start_num = _db_max_value()
-    scraping_length = 80
+    scraping_length = 12300
     end_num = start_num + scraping_length
       
     while start_num < end_num:
