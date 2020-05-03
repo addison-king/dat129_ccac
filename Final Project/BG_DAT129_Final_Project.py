@@ -5,16 +5,36 @@ Brandyn Gilbert
     Final Project
     API & Databases
 """
+'''
+Answer the questions:
+        New TV Series per year
+        Average seasons per show
+        Number of shows per season count
+'''
+
 import requests
 import json
 import os
 import sqlite3
 from sqlite3 import Error
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 def main():
     auth_headers = _get_token()
     _create_db_table()
-    _scrape_series(auth_headers)
+    main_user_choice = _main_menu()
+    if main_user_choice == 1:
+        _scrape_series(auth_headers)
+    else:
+        _db_analysis()
+
+def _main_menu():
+    print('1. Scrape more from TheTVDB.com')
+    print('2. Analyze the database')
+    choice = input("Please choose an option: ")
+    return choice
 
 def _create_db_table():
     sql_table = '''CREATE table IF NOT EXISTS TV_Series (
@@ -127,7 +147,7 @@ def _scrape_series(headers):
     # first_series_id = 70326,
     # start_num = first_series_id
     start_num = _db_max_value()
-    scraping_length = 54432
+    scraping_length = 1
     end_num = start_num + scraping_length
       
     while start_num < end_num:
@@ -172,9 +192,37 @@ def _scrape_series(headers):
             connection.commit()
             connection.close()
 
-
-
-
+def _db_analysis():
+    print("here")
+    connection = _db_connection()
+    c = connection.cursor()
+    c.execute('''
+                SELECT season
+                FROM TV_Series
+                WHERE seriesName IS NOT NULL and season < 1000
+                ORDER BY season DESC 
+                ''')
+    rows = c.fetchall()
+    connection.close()
+    seasons = []
+    for i in rows:
+        for j in i:
+            seasons.append(j)
+        
+    df = pd.DataFrame(seasons)
+    # print(df.mean())
+    # print(df.nunique())
+    counts = df[0].value_counts().to_dict()
+    count_df = df[0].value_counts()
+    # print(counts)
+    # print('`````````````````````````````````````````````````````````````')
+    # print(count_df)
+    # print(count_df.head())
+    # bar_ax = count_df.plot.bar(logy=True, rot=0, figsize=(20,10))
+    # print(bar_ax)
+    hist_ax = df.plot.hist(logy=True, figsize=(20,10))
+    print(hist_ax)
+    
 
 if __name__ == "__main__":
     main()
