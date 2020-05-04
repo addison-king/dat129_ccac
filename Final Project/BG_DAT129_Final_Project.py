@@ -322,12 +322,17 @@ def _db_runtime():
     for i in rows:
         for j in i:
             runtime.append(int(j))
-            print(int(j))
+            
         
     df = pd.DataFrame(runtime)
-    print(df)
+    df_size = df.size
+    df_mean = df.mean()
+    for i in df_mean:
+        print('Across', df_size, 'shows, the average runtime is:', round(i, 2), 'mins.')
+    
 
 def _db_analysis():
+    print('\n\n')
     # _db_number_of_seasons()
     # _db_decades()
     # _db_years()
