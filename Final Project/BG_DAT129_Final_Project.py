@@ -10,6 +10,7 @@ Answer the questions:
         New TV Series per year
         Average seasons per show
         Number of shows per season count
+        Average runtime
 '''
 
 import requests
@@ -192,14 +193,13 @@ def _scrape_series(headers):
             connection.commit()
             connection.close()
 
-def _db_analysis():
-    print("here")
+def _db_number_of_seasons():
     connection = _db_connection()
     c = connection.cursor()
     c.execute('''
                 SELECT season
                 FROM TV_Series
-                WHERE seriesName IS NOT NULL and season < 1000
+                WHERE seriesName IS NOT NULL and season < 101
                 ORDER BY season DESC 
                 ''')
     rows = c.fetchall()
@@ -210,19 +210,138 @@ def _db_analysis():
             seasons.append(j)
         
     df = pd.DataFrame(seasons)
-    # print(df.mean())
-    # print(df.nunique())
-    counts = df[0].value_counts().to_dict()
-    count_df = df[0].value_counts()
-    # print(counts)
-    # print('`````````````````````````````````````````````````````````````')
-    # print(count_df)
-    # print(count_df.head())
-    # bar_ax = count_df.plot.bar(logy=True, rot=0, figsize=(20,10))
-    # print(bar_ax)
-    hist_ax = df.plot.hist(logy=True, figsize=(20,10))
-    print(hist_ax)
+    _graph_seasons_histogram(df)
+
+def _db_decades():
+
+    lower_days = '-01-01'
+    upper_days = '-12-31'
+    decades = {}
+    lower_num = 1951
+    while lower_num < 2021:
+        upper_num = lower_num + 9
+        lower = str(lower_num) + lower_days
+        upper = str(upper_num) + upper_days
+        lower = '"' + lower + '"'
+        upper = '"' + upper + '"'
+        decade_label = lower_num - 1
+        decade_label = str(decade_label) + '\'s'
+        dates = lower + 'AND' + upper
+        
+        connection = _db_connection()
+        c = connection.cursor()
+        c.execute('''
+                SELECT firstAired
+                FROM TV_Series
+                WHERE seriesName IS NOT NULL  and 
+                      firstAired IS NOT NULL  and
+                      firstAired != ""        and
+                      firstAired BETWEEN %s 
+                ORDER BY firstAired DESC 
+                ''' %(dates))
+        rows = c.fetchall()
+        connection.close()
+        years = []
+        for i in rows:
+            for j in i:
+                years.append(j)
+        
+        decades[decade_label] = len(years)        
+
+        lower_num += 10
     
+    df = pd.DataFrame.from_dict(decades, orient='index')
+
+    ax = df.plot.bar(figsize=(20,10), grid=True)
+    ax.set_xlabel('Decade')
+    ax.set_ylabel('Number of TV Series')
+    ax.set_title('Television Series Divided by Decades')
+    ax.get_legend().remove()
+    print(ax)
+    
+def _db_years():
+    lower_days = '-01-01'
+    upper_days = '-12-31'
+    years = {}
+    lower_num = 2000
+    while lower_num < 2021:
+        upper_num = lower_num + 1
+        lower = str(lower_num) + lower_days
+        upper = str(upper_num) + upper_days
+        lower = '"' + lower + '"'
+        upper = '"' + upper + '"'
+        year_label = str(lower_num)
+
+        dates = lower + 'AND' + upper
+        
+        connection = _db_connection()
+        c = connection.cursor()
+        c.execute('''
+                SELECT firstAired
+                FROM TV_Series
+                WHERE seriesName IS NOT NULL  and 
+                      firstAired IS NOT NULL  and
+                      firstAired != ""        and
+                      firstAired BETWEEN %s 
+                ORDER BY firstAired DESC 
+                ''' %(dates))
+        rows = c.fetchall()
+        connection.close()
+        year = []
+        for i in rows:
+            for j in i:
+                year.append(j)
+        
+        years[year_label] = len(year)        
+
+        lower_num += 1
+    
+    df = pd.DataFrame.from_dict(years, orient='index')
+
+    ax = df.plot.bar(figsize=(20,10), grid=True)
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Number of TV Series')
+    ax.set_title('New Television Series per Year Beginning in 2000')
+    ax.get_legend().remove()
+    print(ax)
+
+def _db_runtime():
+    connection = _db_connection()
+    c = connection.cursor()
+    c.execute('''
+                SELECT runtime
+                FROM TV_Series
+                WHERE seriesName IS NOT NULL and 
+                runtime IS NOT NULL          and
+                runtime != ""
+                ORDER BY runtime ASC 
+                ''')
+    rows = c.fetchall()
+    connection.close()
+    runtime = []
+    for i in rows:
+        for j in i:
+            runtime.append(int(j))
+            print(int(j))
+        
+    df = pd.DataFrame(runtime)
+    print(df)
+
+def _db_analysis():
+    # _db_number_of_seasons()
+    # _db_decades()
+    # _db_years()
+    _db_runtime()
+
+def _graph_seasons_histogram(df):
+    hist_ax = df.plot.hist(logy=True, figsize=(20,10), grid=True, bins=50)
+    hist_ax.set_xlabel('Number of Seasons')
+    hist_ax.set_ylabel('Frequency')
+    hist_ax.set_title('Television Series Divided by Number of Seasons per Show')
+    hist_ax.set_xticks([0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100])
+
+    hist_ax.get_legend().remove()
+    print(hist_ax)
 
 if __name__ == "__main__":
     main()
