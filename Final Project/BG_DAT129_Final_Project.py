@@ -8,19 +8,17 @@ Brandyn Gilbert
 '''
 Answer the questions:
         New TV Series per year
-        Average seasons per show
+        New TV Series per decade
         Number of shows per season count
         Average runtime
 '''
 
 import requests
 import json
-import os
 import sqlite3
 from sqlite3 import Error
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+
 
 def main():
     auth_headers = _get_token()
@@ -32,12 +30,30 @@ def main():
         _db_analysis()
 
 def _main_menu():
+    '''
+    Asks the user what they would like to do.
+
+    Returns
+    -------
+    choice : int
+        The users choice to be used in an if statement.
+
+    '''
     print('1. Scrape more from TheTVDB.com')
     print('2. Analyze the database')
     choice = input("Please choose an option: ")
+    choice = int(choice)
     return choice
 
 def _create_db_table():
+    '''
+    Creates a table if it doesn't exist.
+
+    Returns
+    -------
+    None.
+
+    '''
     sql_table = '''CREATE table IF NOT EXISTS TV_Series (
                         id integer,
                         seriesId text,
@@ -74,6 +90,14 @@ def _create_db_table():
     connection.close()
 
 def _db_connection():
+    '''
+    Connects to the .db file
+
+    Returns
+    -------
+    connection : sqlite db connection
+        
+    '''
     try:
         connection = sqlite3.connect('BG_DAT129_Final_Project.db')
     except Error:
@@ -81,6 +105,15 @@ def _db_connection():
     return connection
 
 def _get_token():
+    '''
+    Builds the API token needed for TheTVDB
+
+    Returns
+    -------
+    auth_headers : str
+        Headers used to access the API.
+
+    '''
     header = {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -106,12 +139,43 @@ def _get_token():
     return auth_headers
 
 def _get_api_json(start_num, headers):
+    '''
+    Builds the URL for the API, gets the data, then breaks it down into a 
+        python/JSON format
+
+    Parameters
+    ----------
+    start_num : int
+        First ID to scrape.
+    headers : str
+        Headers used to access the API..
+
+    Returns
+    -------
+    text : dict
+        json text of the resulting API request.
+
+    '''
     url = 'https://api.thetvdb.com/series/'+ str(start_num)
     r = requests.get(url, headers=headers)
     text = r.json()
     return text
 
 def _db_error_id(start_num):
+    '''
+    If the ID doesn't exist/isn't valid, this inserts a row with the ID followed
+        by "NULL" for all columns
+
+    Parameters
+    ----------
+    start_num : int
+        The ID currently being scraped.
+
+    Returns
+    -------
+    None.
+
+    '''
     print('\nError ID -', start_num)
     n_lis = [start_num, None, None, None, None, None, None, None, None, 
            None, None, None, None, None, None, None, None, None, None, 
@@ -120,13 +184,22 @@ def _db_error_id(start_num):
     
     connection = _db_connection()
     c = connection.cursor()
-    c.execute('''INSERT INTO TV_Series VALUES
-              (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',
+    c.execute('''INSERT INTO TV_Series VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',
               n_tup)
     connection.commit()
     connection.close()
 
 def _db_max_value():
+    '''
+    Queries the DB for the max ID that is stored.
+    This number is then used to scrape more series without duplicates.
+
+    Returns
+    -------
+    j : int
+        max id value.
+
+    '''
     connection = _db_connection()
     c = connection.cursor()
     c.execute('''SELECT MAX(id)
@@ -144,9 +217,25 @@ def _db_max_value():
     return j
 
 def _scrape_series(headers):
+    '''
+    1. Checks the ID value to see if a series exist or not. 
+    2. Good IDs will: 
+        a. convert 'genre' and 'aliases' values to str
+        b. takes all of the dict values >> list >> tuple
+        c. takes said tuple and inserts it into the DB
+    
 
-    # first_series_id = 70326,
-    # start_num = first_series_id
+    Parameters
+    ----------
+    headers : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
+
     start_num = _db_max_value()
     scraping_length = 1
     end_num = start_num + scraping_length
@@ -157,9 +246,7 @@ def _scrape_series(headers):
 
         if 'Error' in text.keys():
             _db_error_id(start_num) 
-            
             start_num += 1
-            
                     
         else:
             print('\nGood ID -', start_num)
@@ -176,15 +263,8 @@ def _scrape_series(headers):
             alias_str = ', '.join(aliases)
             text2['aliases'] = alias_str
     
-            columns = ', '.join(str(x).replace('/', '_') for x in text2.keys())
-            values = ', '.join("'" + str(x).replace('/', '_') + "'" for x in text2.values())
-        
             res = tuple(list(text2.values()))
-            
-                        
-            columns = ', '.join("'" + str(x).replace('/', '_') + "'" for x in text2.keys())
-            sql_insert = ''''INSERT INTO %s (%s) VALUES %s''' % ('TV_Series', columns, res)
-            
+          
             connection = _db_connection()
             c = connection.cursor()
             
@@ -194,6 +274,17 @@ def _scrape_series(headers):
             connection.close()
 
 def _db_number_of_seasons():
+    '''
+    Queries the DB for 'season' which is not empty and under 101
+    Each value is added to a list
+    List to DataFrame
+    Send the DF to be graphed
+
+    Returns
+    -------
+    None.
+
+    '''
     connection = _db_connection()
     c = connection.cursor()
     c.execute('''
@@ -213,6 +304,20 @@ def _db_number_of_seasons():
     _graph_seasons_histogram(df)
 
 def _db_decades():
+    '''
+    LOOKING AT TV SHOWS OVER DECADES
+    
+    Builds strs that will act as lower & upper bounds for dates
+    Queries the DB with the built dates
+    All values are stored into a list
+    List to DataFrame
+    DataFrame output graph
+
+    Returns
+    -------
+    None.
+
+    '''
 
     lower_days = '-01-01'
     upper_days = '-12-31'
@@ -260,6 +365,20 @@ def _db_decades():
     print(ax)
     
 def _db_years():
+    '''
+    LOOKING AT TV SHOWS PER YEAR
+    
+    Builds strs that will act as lower & upper bounds for dates
+    Queries the DB with the built dates
+    All values are stored into a list
+    List to DataFrame
+    DataFrame output graph
+    
+    Returns
+    -------
+    None.
+
+    '''
     lower_days = '-01-01'
     upper_days = '-12-31'
     years = {}
@@ -306,6 +425,17 @@ def _db_years():
     print(ax)
 
 def _db_runtime():
+    '''
+    Queries the DB for runtime values
+    Adds all values as int to list
+    List to DataFrame
+    Output the result to console
+
+    Returns
+    -------
+    None.
+
+    '''
     connection = _db_connection()
     c = connection.cursor()
     c.execute('''
@@ -332,13 +462,34 @@ def _db_runtime():
     
 
 def _db_analysis():
+    '''
+    Calls other functions to do DB stuff
+
+    Returns
+    -------
+    None.
+
+    '''
     print('\n\n')
-    # _db_number_of_seasons()
-    # _db_decades()
-    # _db_years()
+    _db_number_of_seasons()
+    _db_decades()
+    _db_years()
     _db_runtime()
 
 def _graph_seasons_histogram(df):
+    '''
+    Graphs the histogram for number of seasons per TV Show
+
+    Parameters
+    ----------
+    df : pandas dataframe
+        Number of seasons for each tv show.
+
+    Returns
+    -------
+    None.
+
+    '''
     hist_ax = df.plot.hist(logy=True, figsize=(20,10), grid=True, bins=50)
     hist_ax.set_xlabel('Number of Seasons')
     hist_ax.set_ylabel('Frequency')
