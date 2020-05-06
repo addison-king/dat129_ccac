@@ -238,6 +238,7 @@ def _scrape_series(headers):
     '''
 
     start_num = _db_max_value()
+  # adjust this value to scrape for as many series as you want  
     scraping_length = 1
     end_num = start_num + scraping_length
       
