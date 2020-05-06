@@ -39,6 +39,7 @@ def _main_menu():
         The users choice to be used in an if statement.
 
     '''
+    print('\n\nOptions:')
     print('1. Scrape more from TheTVDB.com')
     print('2. Analyze the database')
     choice = input("Please choose an option: ")
@@ -458,7 +459,7 @@ def _db_runtime():
     df_size = df.size
     df_mean = df.mean()
     for i in df_mean:
-        print('Across', df_size, 'shows, the average runtime is:', round(i, 2), 'mins.')
+        print('\nAcross', df_size, 'shows, the average runtime is:', round(i, 2), 'mins.')
     
 
 def _db_analysis():
